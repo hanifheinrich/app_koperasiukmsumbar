@@ -20,3 +20,8 @@ Route::get('/', function () {
 Route::get('/dashboard-admin', function () {
     return view('dashboard-admin');
 });
+
+Route::get('/arsip-pendirian', function () {
+    return view('dashboard-admin');
+});
+

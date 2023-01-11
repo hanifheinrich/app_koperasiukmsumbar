@@ -15,7 +15,7 @@
                                 <div class="row align-items-center">
                                     <div class="col-8">
                                         <h4 class="text-c-purple">$30200</h4>
-                                        <h6 class="text-muted m-b-0">All Earnings</h6>
+                                        <h6 class="text-muted m-b-0">Jumlah Penjungjung</h6>
                                     </div>
                                     <div class="col-4 text-right">
                                         <i class="fa fa-bar-chart f-28"></i>
@@ -41,7 +41,7 @@
                                 <div class="row align-items-center">
                                     <div class="col-8">
                                         <h4 class="text-c-green">290+</h4>
-                                        <h6 class="text-muted m-b-0">Page Views</h6>
+                                        <h6 class="text-muted m-b-0">Jumlah Koperasi & UKM</h6>
                                     </div>
                                     <div class="col-4 text-right">
                                         <i class="fa fa-file-text-o f-28"></i>
@@ -66,10 +66,10 @@
                                 <div class="row align-items-center">
                                     <div class="col-8">
                                         <h4 class="text-c-red">145</h4>
-                                        <h6 class="text-muted m-b-0">Task Completed</h6>
+                                        <h6 class="text-muted m-b-0">Jumlah Arsip Pendirian</h6>
                                     </div>
                                     <div class="col-4 text-right">
-                                        <i class="fa fa-calendar-check-o f-28"></i>
+                                        <i class="fa fa-file-text-o f-28"></i>
                                     </div>
                                 </div>
                             </div>
@@ -91,10 +91,10 @@
                                 <div class="row align-items-center">
                                     <div class="col-8">
                                         <h4 class="text-c-blue">500</h4>
-                                        <h6 class="text-muted m-b-0">Downloads</h6>
+                                        <h6 class="text-muted m-b-0">Jumlah Arsip PAD</h6>
                                     </div>
                                     <div class="col-4 text-right">
-                                        <i class="fa fa-hand-o-down f-28"></i>
+                                        <i class="fa fa-file-text-o f-28"></i>
                                     </div>
                                 </div>
                             </div>
