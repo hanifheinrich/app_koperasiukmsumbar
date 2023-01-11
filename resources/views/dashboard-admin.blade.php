@@ -1,6 +1,94 @@
 @extends('layouts/main')
 
+@section('sidebar')
+<nav class="pcoded-navbar">
+    <div class="sidebar_toggle"><a href="#"><i class="icon-close icons"></i></a></div>
+    <div class="pcoded-inner-navbar main-menu">
+        <div class="">
+            <div class="main-menu-header">
+                <img class="img-80 img-radius" src="assets/images/avatar-4.jpg" alt="User-Profile-Image">
+                <div class="user-details">
+                    <span id="more-details">Admin</span>
+                </div>
+            </div>
+        </div>
+        <div class="p-15 p-b-0">
+        </div>
+        <div class="pcoded-navigation-label" data-i18n="nav.category.navigation">Layout</div>
+        <ul class="pcoded-item pcoded-left-item">
+
+          <li class="active">
+                <a href="index.html" class="waves-effect waves-dark">
+                    <span class="pcoded-micon"><i class="ti-home"></i><b>D</b></span>
+                    <span class="pcoded-mtext" data-i18n="nav.dash.main">Dashboard</span>
+                    <span class="pcoded-mcaret"></span>
+                </a>
+            </li>
+            <li class="">
+              <a href="index.html" class="waves-effect waves-dark">
+                  <span class="pcoded-micon"><i class="ti-home"></i><b>D</b></span>
+                  <span class="pcoded-mtext" data-i18n="nav.dash.main">Profile</span>
+                  <span class="pcoded-mcaret"></span>
+              </a>
+          </li>
+        </ul>
+        <div class="pcoded-navigation-label" data-i18n="nav.category.forms">Master Data</div>
+        <ul class="pcoded-item pcoded-left-item">
+            <li>
+                <a href="form-elements-component.html" class="waves-effect waves-dark">
+                    <span class="pcoded-micon"><i class="ti-layers"></i><b>FC</b></span>
+                    <span class="pcoded-mtext" data-i18n="nav.form-components.main">Koperasi & UKM</span>
+                    <span class="pcoded-mcaret"></span>
+                </a>
+            </li>
+        </ul>
+
+        <div class="pcoded-navigation-label" data-i18n="nav.category.forms">Pengarsipan</div>
+        <ul class="pcoded-item pcoded-left-item">
+            <li>
+                <a href="chart.html" class="waves-effect waves-dark">
+                    <span class="pcoded-micon"><i class="ti-layers"></i><b>FC</b></span>
+                    <span class="pcoded-mtext" data-i18n="nav.form-components.main">Arsip Pendirian</span>
+                    <span class="pcoded-mcaret"></span>
+                </a>
+            </li>
+            <li>
+                <a href="map-google.html" class="waves-effect waves-dark">
+                    <span class="pcoded-micon"><i class="ti-layers"></i><b>FC</b></span>
+                    <span class="pcoded-mtext" data-i18n="nav.form-components.main">Arsip PAD</span>
+                    <span class="pcoded-mcaret"></span>
+                </a>
+            </li>        
+        </ul>
+    </div>
+</nav>
+@endsection
+
 @section('konten')
+<div class="pcoded-content">
+    <!-- Page-header start -->
+    <div class="page-header">
+        <div class="page-block">
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <div class="page-header-title">
+                        <h5 class="m-b-10">Dashboard</h5>
+                        <p class="m-b-0">Welcome to Sistem Informasi Pengarsipan Dinas Koperas & UKM Provinsi Sumatera Barat</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <ul class="breadcrumb-title">
+                        <li class="breadcrumb-item">
+                            <a href="index.html"> <i class="fa fa-home"></i> </a>
+                        </li>
+                        <li class="breadcrumb-item"><a href="#!">Dashboard</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Page-header end -->
 <div class="pcoded-inner-content">
     <!-- Main-body start -->
     <div class="main-body">
@@ -14,7 +102,7 @@
                             <div class="card-block">
                                 <div class="row align-items-center">
                                     <div class="col-8">
-                                        <h4 class="text-c-purple">$30200</h4>
+                                        <h4 class="text-c-purple">5400</h4>
                                         <h6 class="text-muted m-b-0">Jumlah Penjungjung</h6>
                                     </div>
                                     <div class="col-4 text-right">
@@ -40,7 +128,7 @@
                             <div class="card-block">
                                 <div class="row align-items-center">
                                     <div class="col-8">
-                                        <h4 class="text-c-green">290+</h4>
+                                        <h4 class="text-c-green">475</h4>
                                         <h6 class="text-muted m-b-0">Jumlah Koperasi & UKM</h6>
                                     </div>
                                     <div class="col-4 text-right">
@@ -65,7 +153,7 @@
                             <div class="card-block">
                                 <div class="row align-items-center">
                                     <div class="col-8">
-                                        <h4 class="text-c-red">145</h4>
+                                        <h4 class="text-c-red">475</h4>
                                         <h6 class="text-muted m-b-0">Jumlah Arsip Pendirian</h6>
                                     </div>
                                     <div class="col-4 text-right">
@@ -116,8 +204,8 @@
                     <div class="col col-md-12">
                         <div class="card">
                             <div class="card-header">
-                                <h5>Sales Analytics</h5>
-                                <span class="text-muted">Get 15% Off on <a href="https://www.amcharts.com/" target="_blank">amCharts</a> licences. Use code "codedthemes" and get the discount.</span>
+                                <h5>View Analytics</h5>
+                                <span class="text-muted">Grafik jumlah pengunjung website dalam satuan waktu</span>
                                 <div class="card-header-right">
                                     <ul class="list-unstyled card-option">
                                         <li><i class="fa fa fa-wrench open-card-option"></i></li>
@@ -140,5 +228,6 @@
         </div>
         <div id="styleSelector"> </div>
     </div>
+</div>
 </div>
 @endsection

@@ -45,14 +45,14 @@
 
         <div class="pcoded-navigation-label" data-i18n="nav.category.forms">Pengarsipan</div>
         <ul class="pcoded-item pcoded-left-item">
-            <li class="active">
+            <li class="">
                 <a href="chart.html" class="waves-effect waves-dark">
                     <span class="pcoded-micon"><i class="ti-layers"></i><b>FC</b></span>
                     <span class="pcoded-mtext" data-i18n="nav.form-components.main">Arsip Pendirian</span>
                     <span class="pcoded-mcaret"></span>
                 </a>
             </li>
-            <li>
+            <li class="active">
                 <a href="map-google.html" class="waves-effect waves-dark">
                     <span class="pcoded-micon"><i class="ti-layers"></i><b>FC</b></span>
                     <span class="pcoded-mtext" data-i18n="nav.form-components.main">Arsip PAD</span>
@@ -72,8 +72,8 @@
           <div class="row align-items-center">
               <div class="col-md-8">
                   <div class="page-header-title">
-                      <h5 class="m-b-10">Arsip Pendirian</h5>
-                      <p class="m-b-0">Temukan file arsip pendirian secara cepat disini</p>
+                      <h5 class="m-b-10">Arsip Perubahan Anggaran Dasar</h5>
+                      <p class="m-b-0">Temukan file arsip perubahan anggaran dasar secara cepat disini</p>
                   </div>
               </div>
               <div class="col-md-4">
@@ -81,7 +81,7 @@
                       <li class="breadcrumb-item">
                           <a href="index.html"> <i class="fa fa-home"></i> </a>
                       </li>
-                      <li class="breadcrumb-item"><a href="#!">Arsip Pendirian</a>
+                      <li class="breadcrumb-item"><a href="#!">Arsip PAD</a>
                       </li>
                   </ul>
               </div>
@@ -94,7 +94,7 @@
                         <!-- Hover table card start -->
                         <div class="card">
                           <div class="card-header">
-                            <h5>Tabel Arsip Pendirian</h5>
+                            <h5>Tabel Arsip Perubahan Anggaran Dasar</h5>
                             <span
                               >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores adipisci pariatur odit omnis atque architecto ipsa quas neque eveniet cumque.</span
                             >
@@ -120,7 +120,8 @@
                                     <th>No</th>
                                     <th>Nama Koperasi</th>
                                     <th>Kota/Kabupaten</th>
-                                    <th>File</th>
+                                    <th>File 1</th>
+                                    <th>File 2</th>
                                   </tr>
                                 </thead>
                                 <tbody>
@@ -129,17 +130,20 @@
                                     <td>Mark</td>
                                     <td>Otto</td>
                                     <td>@mdo</td>
+                                    <td>@mdo</td>
                                   </tr>
                                   <tr>
                                     <th scope="row">2</th>
                                     <td>Jacob</td>
                                     <td>Thornton</td>
                                     <td>@fat</td>
+                                    <td>@fat</td>
                                   </tr>
                                   <tr>
                                     <th scope="row">3</th>
                                     <td>Larry</td>
                                     <td>the Bird</td>
+                                    <td>@twitter</td>
                                     <td>@twitter</td>
                                   </tr>
                                 </tbody>
