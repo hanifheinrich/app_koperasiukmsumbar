@@ -1,5 +1,6 @@
 <?php
 
+use app\Http\Controllers\AdminController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -23,11 +24,7 @@ Route::get('/dashboard-admin', function () {
     ]);
 });
 
-Route::get('/master-koperasi-ukm', function () {
-    return view('master-koperasi-ukm',[
-        "title" => "Koperasi & UKM"
-    ]);
-});
+Route::get('/master-koperasi-ukm',[AdminController::class, 'index']);
 
 Route::get('/arsip-pendirian', function () {
     return view('arsip-pendirian',[
