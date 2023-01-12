@@ -24,23 +24,15 @@
                             <div class="row">
                                 <div style="margin-left: 1%">
                                     <div class="dataTables_length bs-select" id="dtBasicExample_length">
-                                        <label>
                                             <select name="dtBasicExample_length" aria-controls="dtBasicExample" class="custom-select custom-select-sm form-control form-control-sm" fdprocessedid="9brkq8">
                                                 <option value="10">10</option>
                                                 <option value="20">20</option>
                                                 <option value="30">30</option>
                                                 <option value="40">40</option>
                                             </select>
-                                        </label>
                                     </div>
                                 </div>
-                                <div style="margin-left: 5%">
-                                    <div id="dtBasicExample_filter" class="dataTables_filter">
-                                        <label>
-                                            <input type="search" class="form-control form-control-sm"placeholder aria-controls="selectedColumn">
-                                        </label>
-                                    </div>
-                                </div>
+                                <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Pencarian">
                                 <div class="card-header-right">
                                     <a class="btn btn-primary float-right mt-2" href="#" role="button">Tambah Siswa</a>
                                 </div>
@@ -104,4 +96,26 @@
             </div>
             </div>
 </div>
+
+<script>
+    function myFunction() {
+      // Declare variables
+      var input, filter, table, tr, td, i, txtValue;
+      input = document.getElementById("myInput");
+      filter = input.value.toUpperCase();
+    
+      // Loop through all table rows, and hide those who don't match the search query
+      for (i = 0; i < tr.length; i++) {
+        td = tr[i].getElementsByTagName("td")[0];
+        if (td) {
+          txtValue = td.textContent || td.innerText;
+          if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            tr[i].style.display = "";
+          } else {
+            tr[i].style.display = "none";
+          }
+        }
+      }
+    }
+    </script>
 @endsection
