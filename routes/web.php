@@ -18,6 +18,8 @@ Route::get('/', function () {
     return view('login');
 });
 
+
+
 Route::get('/dashboard-admin', function () {
     return view('dashboard-admin',[
         "title" => "Dashboard Admin"
