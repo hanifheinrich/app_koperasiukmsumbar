@@ -20,3 +20,7 @@ Route::get('/', function () {
 Route::get('/dashboard-admin', function () {
     return view('dashboard-admin');
 });
+
+Route::get('/koperasi-ukm', function () {
+    return view('kabkota-admin');
+});
