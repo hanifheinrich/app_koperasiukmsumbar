@@ -1,7 +1,8 @@
 <?php
 
-use app\Http\Controllers\AdminController;
 use Illuminate\Support\Facades\Route;
+use app\Http\Controllers\AdminController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -19,36 +20,12 @@ Route::get('/', function () {
 });
 
 
-
-Route::get('/dashboard-admin', function () {
-    return view('dashboard-admin',[
-        "title" => "Dashboard Admin"
-    ]);
-});
-
-Route::get('/profil', function () {
-    return view('profile',[
-        "title" => "Profil"
-      ]);
-});
-
-Route::get('/master-data', function () {
-    return view('master-koperasi-ukm',[
-        "title" => "Koperasi & UKM"
-      ]);
-});
-
-Route::get('/arsip-pendirian', function () {
-    return view('arsip-pendirian',[
-        "title" => "Arsip Pendirian Koperasi & UKM"
-    ]);
-});
-
-Route::get('/arsip-pad', function () {
-    return view('arsip-pad',[
-        "title" => "Arsip Perubahan Anggaran Dasar Koperasi & UKM"
-    ]);
-});
+Route::get('/dashboard-admin', 'App\Http\Controllers\AdminController@dashboard');
+Route::get('/profil', 'App\Http\Controllers\AdminController@profile');
+Route::get('/master-data', 'App\Http\Controllers\AdminController@masterdata');
+Route::get('/detail-master-data', 'App\Http\Controllers\AdminController@detailmasterdata');
+Route::get('/arsip-pendirian', 'App\Http\Controllers\AdminController@arsippendirian');
+Route::get('/arsip-pad', 'App\Http\Controllers\AdminController@arsippad');
 
 
 
