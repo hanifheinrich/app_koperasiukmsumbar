@@ -24,10 +24,16 @@ Route::get('/dashboard-admin', function () {
     ]);
 });
 
-Route::get('/master-koperasi-ukm', function(){
+Route::get('/profil', function () {
+    return view('profile',[
+        "title" => "Profil"
+      ]);
+});
+
+Route::get('/master-data', function () {
     return view('master-koperasi-ukm',[
         "title" => "Koperasi & UKM"
-    ]);
+      ]);
 });
 
 Route::get('/arsip-pendirian', function () {
