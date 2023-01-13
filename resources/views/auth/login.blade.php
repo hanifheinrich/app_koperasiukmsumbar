@@ -2,7 +2,6 @@
 <head>
     <meta charset="UTF-8">
     <title> Login</title>
-    <link rel="stylesheet" href="style.css">
     <!-- Boxicons CDN Link -->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
@@ -80,7 +79,7 @@
         <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
           Sistem Informasi Pengarsipan Dinas Koperasi & UKM
           <b>Created by Mahasiswa KP Sistem Informasi Unand</b>
-          © 2022
+          © 2023
         </div>
         <!-- Copyright -->
       </footer>

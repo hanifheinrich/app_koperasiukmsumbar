@@ -45,3 +45,9 @@ Route::get('/arsip-pad', function () {
         "title" => "Arsip Perubahan Anggaran Dasar Koperasi & UKM"
     ]);
 });
+
+Route::get('/koperasi', function () {
+    return view('user.koperasi',[
+        "title" => "Daftar Koperasi dan UKM"
+    ]);
+});
