@@ -46,8 +46,8 @@ Route::get('/arsip-pad', function () {
     ]);
 });
 
-Route::get('/koperasi', function () {
-    return view('user.koperasi',[
-        "title" => "Daftar Koperasi dan UKM"
+Route::get('/daftar-koperasi', function () {
+    return view('kabkota-admin',[
+        "title" => "Daftar Koperasi dan UKMz"
     ]);
 });
