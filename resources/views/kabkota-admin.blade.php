@@ -1,121 +1,146 @@
 @extends('layouts/main')
 
+@section('sidebar')
+<nav class="pcoded-navbar">
+    <div class="sidebar_toggle"><a href="#"><i class="icon-close icons"></i></a></div>
+    <div class="pcoded-inner-navbar main-menu">
+        <div class="">
+            <div class="main-menu-header">
+                <img class="img-80 img-radius" src="assets/images/foto_profil.png" alt="User-Profile-Image">
+                <div class="user-details">
+                    <span id="more-details">Admin</span>
+                </div>
+            </div>
+        </div>
+        <div class="p-15 p-b-0">
+        </div>
+        <div class="pcoded-navigation-label" data-i18n="nav.category.navigation">Layout</div>
+        <ul class="pcoded-item pcoded-left-item">
+
+          <li class="">
+                <a href="index.html" class="waves-effect waves-dark">
+                    <span class="pcoded-micon"><i class="ti-home"></i><b>D</b></span>
+                    <span class="pcoded-mtext" data-i18n="nav.dash.main">Dashboard</span>
+                    <span class="pcoded-mcaret"></span>
+                </a>
+            </li>
+            <li class="">
+              <a href="index.html" class="waves-effect waves-dark">
+                  <span class="pcoded-micon"><i class="ti-home"></i><b>D</b></span>
+                  <span class="pcoded-mtext" data-i18n="nav.dash.main">Profile</span>
+                  <span class="pcoded-mcaret"></span>
+              </a>
+          </li>
+        </ul>
+        <div class="pcoded-navigation-label" data-i18n="nav.category.forms">Master Data</div>
+        <ul class="pcoded-item pcoded-left-item">
+            <li class="active">
+                <a href="form-elements-component.html" class="waves-effect waves-dark">
+                    <span class="pcoded-micon"><i class="ti-layers"></i><b>FC</b></span>
+                    <span class="pcoded-mtext" data-i18n="nav.form-components.main">Koperasi & UKM</span>
+                    <span class="pcoded-mcaret"></span>
+                </a>
+            </li>
+        </ul>
+
+        <div class="pcoded-navigation-label" data-i18n="nav.category.forms">Pengarsipan</div>
+        <ul class="pcoded-item pcoded-left-item">
+            <li>
+                <a href="chart.html" class="waves-effect waves-dark">
+                    <span class="pcoded-micon"><i class="ti-layers"></i><b>FC</b></span>
+                    <span class="pcoded-mtext" data-i18n="nav.form-components.main">Arsip Pendirian</span>
+                    <span class="pcoded-mcaret"></span>
+                </a>
+            </li>
+            <li>
+                <a href="map-google.html" class="waves-effect waves-dark">
+                    <span class="pcoded-micon"><i class="ti-layers"></i><b>FC</b></span>
+                    <span class="pcoded-mtext" data-i18n="nav.form-components.main">Arsip PAD</span>
+                    <span class="pcoded-mcaret"></span>
+                </a>
+            </li>        
+        </ul>
+    </div>
+</nav>
+@endsection
+
 @section('konten')
-<div class="pcoded-inner-content">
-    <!-- Main-body start -->
-    <div class="main-body">
-        <div class="page-wrapper">
-            <!-- Page-body start -->
-            <div class="page-body">
-                <!-- Caption Breadcrumb card start -->
-                <div class="card">
-                    <div class="card-block caption-breadcrumb">
-                        <div class="breadcrumb-header" style="font-size: 40px">
-                            <img style="margin-right: 30px;" src="assets/images/logo_padang.png" alt="" width="70" height="75"/><b>Koperasi & UKM</b>
-                            <div style="font-size: 40px">
-                            </div>
-                        </div>
+<div class="pcoded-content">
+    <!-- Page-header start -->
+    <div class="page-header">
+        <div class="page-block">
+            <div class="row align-items-center">
+                <div class="col-md">
+                    <img src="assets/images/logo_padang.png" width="80px">
                 </div>
+                <div class="col-md-11">
+                    <div class="page-header-title">
+                        <h3 class="m-b-10">Koperasi dan UKM</h3>
+                        <h5 class="m-b-0">Kota Padang</h5>
+                    </div>
                 </div>
-                <!-- Caption Breadcrumb card end -->
+            </div>
+        </div>
+    </div>
+    <!-- Page-header end -->
+    <div class="pcoded-inner-content">
+        <div class="main-body">
+            <div class="page-wrapper">
+                <div class="page-body">
                 <!-- Hover table card start -->
                     <div class="card">
                         <div class="card-header">
-                            <div class="row">
-                                <div style="margin-left: 1%">
-                                    <div class="dataTables_length bs-select" id="dtBasicExample_length">
-                                            <select name="dtBasicExample_length" aria-controls="dtBasicExample" class="custom-select custom-select-sm form-control form-control-sm" fdprocessedid="9brkq8">
-                                                <option value="10">10</option>
-                                                <option value="20">20</option>
-                                                <option value="30">30</option>
-                                                <option value="40">40</option>
-                                            </select>
-                                    </div>
+                            <div class="card-header-right">
+                                <div class="button-page">
+                                    <a href="/dashboard-admin"><button type="button" class="btn btn-primary">
+                                        <span data-feather="plus"></span>
+                                        Tambah Koperasi
+                                    </button></a>
                                 </div>
-                                <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Pencarian">
-                                <div class="card-header-right">
-                                    <a class="btn btn-primary float-right mt-2" href="#" role="button">Tambah Siswa</a>
-                                </div>
+                                {{-- <ul class="list-unstyled card-option">
+                                    <li>
+                                        <i class="fa fa fa-wrench open-card-option"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-window-maximize full-card"></i>
+                                    </li>
+                                    <li><i class="fa fa-minus minimize-card"></i></li>
+                                    <li><i class="fa fa-refresh reload-card"></i></li>
+                                    <li><i class="fa fa-trash close-card"></i></li>
+                                </ul> --}}
                             </div>
-                        {{-- <h5>Hover Table</h5>
-                        <span
-                            >use class <code>table-hover</code> inside table
-                            element</span
-                        > --}}
-                        <div class="card-header-right">
-                            <ul class="list-unstyled card-option">
-                            <li>    
-                                <i class="fa fa fa-wrench open-card-option"></i>
-                            </li>
-                            <li>
-                                <i class="fa fa-window-maximize full-card"></i>
-                            </li>
-                            <li><i class="fa fa-minus minimize-card"></i></li>
-                            <li><i class="fa fa-refresh reload-card"></i></li>
-                            <li><i class="fa fa-trash close-card"></i></li>
-                            </ul>
-                        </div>
                         </div>
                         <div class="card-block table-border-style">
-                        <div class="table-responsive">
-                            <table class="table table-hover">
-                            <thead>
-                                <tr>
-                                <th>No.</th>
-                                <th>Nama Koperasi dan UKM</th>
-                                <th>Kabupaten/Kota</th>
-                                <th>Action</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                <th scope="row">1</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                                </tr>
-                                <tr>
-                                <th scope="row">2</th>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
-                                <td>e</td>
-                                </tr>
-                                <tr>
-                                <th scope="row">3</th>
-                                <td>Larry</td>
-                                <td>the Bird</td>
-                                <td>@twitter</td>
-                                </tr>
-                            </tbody>
-                            </table>
-                        </div>
+                            <div class="table-responsive">
+                                <table class="table table-hover" id="example">
+                                    <thead>
+                                        <tr>
+                                            <th>No</th>
+                                            <th>Nama Koperasi dan UKM</th>
+                                            <th>Kabupaten/Kota</th>
+                                            <th style="text-align: center">Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Mark</td>
+                                            <td>Otto</td>
+                                            <td style="text-align: center">
+                                                <a href="/dashboard-admin"><img src="assets/images/info.png" alt="" width="30px"></a>
+                                                <a href="/dashboard-admin"><img src="assets/images/delete.png" alt="" width="30px" style="margin-left: 40px"></a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
-                    <!-- Hover table card end -->
+                <!-- Hover table card end -->
+                </div>
             </div>
-            </div>
-            </div>
-</div>
+        </div>
+    </div>
 
-<script>
-    function myFunction() {
-      // Declare variables
-      var input, filter, table, tr, td, i, txtValue;
-      input = document.getElementById("myInput");
-      filter = input.value.toUpperCase();
-    
-      // Loop through all table rows, and hide those who don't match the search query
-      for (i = 0; i < tr.length; i++) {
-        td = tr[i].getElementsByTagName("td")[0];
-        if (td) {
-          txtValue = td.textContent || td.innerText;
-          if (txtValue.toUpperCase().indexOf(filter) > -1) {
-            tr[i].style.display = "";
-          } else {
-            tr[i].style.display = "none";
-          }
-        }
-      }
-    }
-    </script>
+</div>
 @endsection

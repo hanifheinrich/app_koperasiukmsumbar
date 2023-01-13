@@ -418,7 +418,7 @@ strong {
     background-size: cover;
     position: relative;
     border-radius: 0;
-    color: #fff;
+    color: black;
 }
 .page-header:before {
     content: "";
@@ -7714,7 +7714,6 @@ table tbody .border-bottom-info td {
 }
 .main-menu .main-menu-header {
     padding: 15px 0;
-    background-image: url("../images/user-bg.jpg");
     background-size: cover;
     text-align: center;
     position: relative;
@@ -13150,9 +13149,11 @@ body[themebg-pattern="theme6"] {
 .pcoded .pcoded-header[header-theme="theme6"] a {
     color: #fff;
 }
-.pcoded[fream-type="theme1"] .page-header:before,
+.pcoded[fream-type="theme1"] .page-header:before{
+    background: white;
+}
 .pcoded[fream-type="theme1"] .main-menu .main-menu-header:before {
-    background: rgba(68, 138, 255, 0.5);
+    background: #036d19;
 }
 .pcoded[fream-type="theme2"] .page-header:before,
 .pcoded[fream-type="theme2"] .main-menu .main-menu-header:before {
