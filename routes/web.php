@@ -1,5 +1,6 @@
 <?php
 
+use app\Http\Controllers\AdminController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,9 +19,31 @@ Route::get('/', function () {
 });
 
 Route::get('/dashboard-admin', function () {
-    return view('dashboard-admin');
+    return view('dashboard-admin',[
+        "title" => "Dashboard Admin"
+    ]);
 });
 
-Route::get('/koperasi-ukm', function () {
-    return view('kabkota-admin');
+Route::get('/master-koperasi-ukm', function(){
+    return view('master-koperasi-ukm',[
+        "title" => "Koperasi & UKM"
+    ]);
+});
+
+Route::get('/arsip-pendirian', function () {
+    return view('arsip-pendirian',[
+        "title" => "Arsip Pendirian Koperasi & UKM"
+    ]);
+});
+
+Route::get('/arsip-pad', function () {
+    return view('arsip-pad',[
+        "title" => "Arsip Perubahan Anggaran Dasar Koperasi & UKM"
+    ]);
+});
+
+Route::get('/daftar-koperasi', function () {
+    return view('kabkota-admin',[
+        "title" => "Daftar Koperasi dan UKM"
+    ]);
 });
