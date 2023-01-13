@@ -54,32 +54,52 @@
                     <tr>
                         <td>Koperasi Pol PP</td>
                         <td>Jl. Linggar Jati 2</td>
-                        <td>01/09/2015</td>
-                        <td>Français</td>
+                        <td>
+                            <a href="/dashboard-admin"><img src="assets/images/pdf.png" alt="" width="30px">Cek File Arsipnya disini</a>
+                        </td>
+                        <td>
+                            <a href="/dashboard-admin"><img src="assets/images/info.png" alt="" width="30px">Cek File Arsipnya disini</a>
+                        </td>
                     </tr>
                     <tr>
                         <td>Koperasi PPNI</td>
                         <td>Jalan Linggar Jati 2</td>
-                        <td>01/09/2015</td>
-                        <td>Français</td>
+                        <td>
+                            <a href="/dashboard-admin"><img src="assets/images/pdf.png" alt="" width="30px">Cek File Arsipnya disini</a>
+                        </td>
+                        <td>
+                            <a href="/dashboard-admin"><img src="assets/images/info.png" alt="" width="30px">Cek File Arsipnya disini</a>
+                        </td>
                     </tr>
                     <tr>
                         <td>Koperasi Polri</td>
                         <td>Jalan Linggar Jati 2</td>
-                        <td>01/09/2015</td>
-                        <td>Français</td>
+                        <td>
+                            <a href="/dashboard-admin"><img src="assets/images/pdf.png" alt="" width="30px">Cek File Arsipnya disini</a>
+                        </td>
+                        <td>
+                            <a href="/dashboard-admin"><img src="assets/images/info.png" alt="" width="30px">Cek File Arsipnya disini</a>
+                        </td>
                     </tr>
                     <tr>
                         <td>Koperasi Affah Iyah</td>
                         <td>Affan tuh</td>
-                        <td>01/09/2015</td>
-                        <td>Français</td>
+                        <td>
+                            <a href="/dashboard-admin"><img src="assets/images/pdf.png" alt="" width="30px">Cek File Arsipnya disini</a>
+                        </td>
+                        <td>
+                            <a href="/dashboard-admin"><img src="assets/images/info.png" alt="" width="30px">Cek File Arsipnya disini</a>
+                        </td>
                     </tr>
                     <tr>
                         <td>Koperasi Mahasiswa</td>
                         <td>Universitas Andalas</td>
-                        <td>01/09/2015</td>
-                        <td>Français</td>
+                        <td>
+                            <a href="/dashboard-admin"><img src="assets/images/pdf.png" alt="" width="30px">Cek File Arsipnya disini</a>
+                        </td>
+                        <td>
+                            <a href="/dashboard-admin"><img src="assets/images/info.png" alt="" width="30px">Cek File Arsipnya disini</a>
+                        </td>
                     </tr>
                 </tbody>
             </table>

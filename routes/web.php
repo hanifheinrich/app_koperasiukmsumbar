@@ -51,3 +51,9 @@ Route::get('/daftar-koperasi', function () {
         "title" => "Daftar Koperasi dan UKMz"
     ]);
 });
+
+Route::get('/koperasi', function () {
+    return view('user.koperasi',[
+        "title" => "Daftar Koperasi dan UKM Kota"
+    ]);
+});
