@@ -8,7 +8,7 @@
             <div class="main-menu-header">
                 <img class="img-80 img-radius" src="assets/images/avatar-4.jpg" alt="User-Profile-Image">
                 <div class="user-details">
-                    <span id="more-details">Admin</span>
+                    <span id="more-details">{{ Auth::user()->name }}</span>
                 </div>
             </div>
         </div>
@@ -73,7 +73,7 @@
                 <div class="col-md-8">
                     <div class="page-header-title">
                         <h5 class="m-b-10">Dashboard</h5>
-                        <p class="m-b-0">Welcome to Sistem Informasi Pengarsipan Dinas Koperasi & UKM Provinsi Sumatera Barat</p>
+                        <p class="m-b-0">Halo {{ Auth::user()->name }}! Welcome to Sistem Informasi Pengarsipan Dinas Koperasi & UKM Provinsi Sumatera Barat</p>
                     </div>
                 </div>
                 <div class="col-md-4">
