@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use app\Http\Controllers\AdminController;
+use app\Http\Controllers\AuthController;
 
 
 /*
@@ -15,17 +16,15 @@ use app\Http\Controllers\AdminController;
 |
 */
 
-Route::get('/', function () {
-    return view('login');
-});
+Route::get('/login','App\Http\Controllers\AuthController@login')->name('login');
 
 
-Route::get('/dashboard-admin', 'App\Http\Controllers\AdminController@dashboard');
-Route::get('/profil', 'App\Http\Controllers\AdminController@profile');
-Route::get('/master-data', 'App\Http\Controllers\AdminController@masterdata');
-Route::get('/detail-master-data', 'App\Http\Controllers\AdminController@detailmasterdata');
-Route::get('/arsip-pendirian', 'App\Http\Controllers\AdminController@arsippendirian');
-Route::get('/arsip-pad', 'App\Http\Controllers\AdminController@arsippad');
+Route::get('/dashboard-admin', 'App\Http\Controllers\AdminController@dashboard')->middleware('auth');
+Route::get('/profil', 'App\Http\Controllers\AdminController@profile')->middleware('auth');;
+Route::get('/master-data', 'App\Http\Controllers\AdminController@masterdata')->middleware('auth');;
+Route::get('/detail-master-data', 'App\Http\Controllers\AdminController@detailmasterdata')->middleware('auth');;
+Route::get('/arsip-pendirian', 'App\Http\Controllers\AdminController@arsippendirian')->middleware('auth');;
+Route::get('/arsip-pad', 'App\Http\Controllers\AdminController@arsippad')->middleware('auth');;
 
 
 

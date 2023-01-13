@@ -98,7 +98,8 @@
                 <div class="col-sm-12">
                     <!-- Authentication card start -->
                     
-                        <form class="md-float-material form-material">
+                        <form class="md-float-material form-material" method="POST" action="">
+                            @csrf
                             <div class="text-center">
                                 <img src="assets/images/siarko2.png" alt="logo.png">
                             </div>
@@ -110,12 +111,12 @@
                                         </div>
                                     </div>
                                     <div class="form-group form-primary">
-                                        <input type="text" name="email" class="form-control" required="">
+                                        <input type="text" name="email" id="email" class="form-control" required>
                                         <span class="form-bar"></span>
                                         <label class="float-label">Username</label>
                                     </div>
                                     <div class="form-group form-primary">
-                                        <input type="password" name="password" class="form-control" required="">
+                                        <input type="password" name="password" id="password" class="form-control" required>
                                         <span class="form-bar"></span>
                                         <label class="float-label">Password</label>
                                     </div>
@@ -125,7 +126,7 @@
                                     </div>
                                     <div class="row m-t-30">
                                         <div class="col-md-12">
-                                            <button type="button" class="btn btn-primary btn-md btn-block waves-effect waves-light text-center m-b-20">Sign in</button>
+                                            <button type="submit" class="btn btn-primary btn-md btn-block waves-effect waves-light text-center m-b-20">Sign in</button>
                                         </div>
                                     </div>
                                 </div>

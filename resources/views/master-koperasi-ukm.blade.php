@@ -111,8 +111,7 @@
                                   <li><i class="fa fa-trash close-card"></i></li>
                                 </ul>
                               </div>
-                            </div>
-                        
+                            </div> 
                             <div class="card-block table-border-style">
                               <div class="table-responsive">
                                 <table class="table table-hover">
