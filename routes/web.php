@@ -17,7 +17,7 @@ use app\Http\Controllers\AuthController;
 */
 
 Route::get('/login','App\Http\Controllers\AuthController@login')->name('login');
-
+Route::post('/login','App\Http\Controllers\AuthController@auth');
 
 Route::get('/dashboard-admin', 'App\Http\Controllers\AdminController@dashboard')->middleware('auth');
 Route::get('/profil', 'App\Http\Controllers\AdminController@profile')->middleware('auth');;

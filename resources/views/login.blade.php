@@ -95,6 +95,11 @@
         <!-- Container-fluid starts -->
         <div class="container">
             <div class="row">
+                @if(Session::has('status'))
+                <div class="alert alert-succes" role="alert">
+                    {{ Session::get('message') }}
+                </div>
+                @endif
                 <div class="col-sm-12">
                     <!-- Authentication card start -->
                     
@@ -111,7 +116,7 @@
                                         </div>
                                     </div>
                                     <div class="form-group form-primary">
-                                        <input type="text" name="email" id="email" class="form-control" required>
+                                        <input type="text" name="username" id="username" class="form-control" required>
                                         <span class="form-bar"></span>
                                         <label class="float-label">Username</label>
                                     </div>
