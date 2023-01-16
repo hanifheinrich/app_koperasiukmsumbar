@@ -46,6 +46,30 @@ Route::get('/arsip-pad', function () {
     ]);
 });
 
+Route::get('/tambah-koperasi', function () {
+    return view('tambah-koperasi',[
+        "title" => "Tambah Koperasi & UKM"
+    ]);
+});
+
+Route::get('/detail-koperasi', function () {
+    return view('detail-koperasi',[
+        "title" => "Detail Koperasi & UKM"
+    ]);
+});
+
+Route::get('/tambah-koperasi', function () {
+    return view('tambah-koperasi',[
+        "title" => "Tambah Koperasi & UKM"
+    ]);
+});
+
+Route::get('/detail-koperasi', function () {
+    return view('detail-koperasi',[
+        "title" => "Detail Koperasi & UKM"
+    ]);
+});
+
 Route::get('/daftar-koperasi', function () {
     return view('kabkota-admin',[
         "title" => "Daftar Koperasi dan UKMz"
