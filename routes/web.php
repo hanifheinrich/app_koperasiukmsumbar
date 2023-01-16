@@ -28,4 +28,39 @@ Route::get('/arsip-pendirian', 'App\Http\Controllers\AdminController@arsippendir
 Route::get('/arsip-pad', 'App\Http\Controllers\AdminController@arsippad')->middleware('auth');;
 
 
+Route::get('/arsip-pad', function () {
+    return view('arsip-pad',[
+        "title" => "Arsip Perubahan Anggaran Dasar Koperasi & UKM"
+    ]);
+});
 
+Route::get('/tambah-koperasi', function () {
+    return view('tambah-koperasi',[
+        "title" => "Tambah Koperasi & UKM"
+    ]);
+});
+
+Route::get('/detail-koperasi', function () {
+    return view('detail-koperasi',[
+        "title" => "Detail Koperasi & UKM"
+    ]);
+});
+
+Route::get('/tambah-koperasi', function () {
+    return view('tambah-koperasi',[
+        "title" => "Tambah Koperasi & UKM"
+    ]);
+});
+
+Route::get('/detail-koperasi', function () {
+    return view('detail-koperasi',[
+        "title" => "Detail Koperasi & UKM"
+    ]);
+});
+
+
+Route::get('/koperasi', function () {
+    return view('user.koperasi',[
+        "title" => "Daftar Koperasi dan UKM Kota"
+    ]);
+});
