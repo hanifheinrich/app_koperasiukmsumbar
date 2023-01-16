@@ -92,7 +92,7 @@
                         <div class="card-header">
                             <div class="card-header-right">
                                 <div class="button-page">
-                                    <a href="/dashboard-admin"><button type="button" class="btn btn-primary">
+                                    <a href="/dashboard-admin"><button class="btn waves-effect waves-light btn-primary btn-block">
                                         <span data-feather="plus"></span>
                                         Tambah Koperasi
                                     </button></a>
