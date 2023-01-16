@@ -91,67 +91,82 @@
   <!-- Page-header end -->
 <div class="pcoded-inner-content">
   <!-- Main-body start -->
-                        <!-- Hover table card start -->
-                        <div class="card">
-                          <div class="card-header">
-                            <h5>Tabel Arsip Perubahan Anggaran Dasar</h5>
-                            <span
-                              >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores adipisci pariatur odit omnis atque architecto ipsa quas neque eveniet cumque.</span
-                            >
-                            <div class="card-header-right">
-                              <ul class="list-unstyled card-option">
-                                <li>
-                                  <i class="fa fa fa-wrench open-card-option"></i>
-                                </li>
-                                <li>
-                                  <i class="fa fa-window-maximize full-card"></i>
-                                </li>
-                                <li><i class="fa fa-minus minimize-card"></i></li>
-                                <li><i class="fa fa-refresh reload-card"></i></li>
-                                <li><i class="fa fa-trash close-card"></i></li>
-                              </ul>
+<!-- Basic table card start -->
+                      <div class="card">
+                        <div class="card-header">
+                          <h5>Arsip PAD Koperasi dan UKM</h5>
+                          <br><br>
+                          <form action="" method="post">
+                            <div class="input-grup">
+                              <input type="text" name="cari" class="form-control">
+                              <div class="input-group-prepend">
+                                <button type="submit" name="search" class="btn btn-primary"><i class="fa fa-search" aria-hidden="true"></i></button>
+                              </div>
                             </div>
-                          </div>
-                          <div class="card-block table-border-style">
-                            <div class="table-responsive">
-                              <table class="table table-hover">
-                                <thead>
-                                  <tr>
-                                    <th>No</th>
-                                    <th>Nama Koperasi</th>
-                                    <th>Kota/Kabupaten</th>
-                                    <th>File 1</th>
-                                    <th>File 2</th>
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                  <tr>
-                                    <th scope="row">1</th>
-                                    <td>Mark</td>
-                                    <td>Otto</td>
-                                    <td>@mdo</td>
-                                    <td>@mdo</td>
-                                  </tr>
-                                  <tr>
-                                    <th scope="row">2</th>
-                                    <td>Jacob</td>
-                                    <td>Thornton</td>
-                                    <td>@fat</td>
-                                    <td>@fat</td>
-                                  </tr>
-                                  <tr>
-                                    <th scope="row">3</th>
-                                    <td>Larry</td>
-                                    <td>the Bird</td>
-                                    <td>@twitter</td>
-                                    <td>@twitter</td>
-                                  </tr>
-                                </tbody>
-                              </table>
-                            </div>
+                        </div>
+                          
+                        <div class="card-block table-border-style">
+                          <div class="table-responsive">
+                            <table class="table">
+                              <thead>
+                                <tr>
+                                  <th>No</th>
+                                  <th>Nama Koperasi dan UKM</th>
+                                  <th>Wilayah</th>
+                                  <th>File</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <th scope="row">1</th>
+                                  <td>Koperasi Solidarity Infinity</td>
+                                  <td>Kota Padang</td>
+                                  <td><img src="assets/images/pdf.png" width="30dp"></td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">2</th>
+                                  <td>Koperasi Sejahtera Makmur</td>
+                                  <td>Kabupaten Pasaman Barat</td>
+                                  <td><img src="assets/images/pdf.png" width="30dp"></td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">3</th>
+                                  <td>Koperasi Papa Mama</td>
+                                  <td>Kota Solok</td>
+                                  <td><img src="assets/images/pdf.png" width="30dp"></td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">4</th>
+                                  <td>Koperasi Friendzone</td>
+                                  <td>Kota Payakumbuh</td>
+                                  <td><img src="assets/images/pdf.png" width="30dp"></td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">5</th>
+                                  <td>Koperasi Menua Bersama</td>
+                                  <td>Kabupaten Pesisir Selatan</td>
+                                  <td><img src="assets/images/pdf.png" width="30dp"></td>
+                                </tr>
+                              </tbody>
+                            </table>
                           </div>
                         </div>
-                        <!-- Hover table card end -->
+                      </div>
+                      <!-- Basic table card end -->
+//<?php
+  //if (isset($_POST['search'])){
+    //$cari = $_POST['cari'];
+    //$query =  mysql_query("select * from tabel_wilayah where wilayah like '%$cari%'");
+  //}
+  ///else
+  //{
+    //$query = mysql_query("select * from tabel_wilayah");
+  //}
+  //$query = mysql_query("select * from tabel_wilayah");
+  //$no = 1;
+  //while($data = mysql_fetch_array($query))
+    //?>
+  
   <div class="main-body">
       <div class="page-wrapper">
       </div>
@@ -159,4 +174,5 @@
   </div>
 </div>
 </div>
+
 @endsection
