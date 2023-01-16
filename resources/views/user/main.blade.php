@@ -76,15 +76,15 @@
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="slider-content">
-                                    <h1 class="title">Dinas Koperasi <br> dan UKM Provinsi <br> Sumatera Barat</h1>
-                                    <p class="text">We blend insights and strategy to create digital products for forward-thinking organisations.</p>
+                                    <h1 class="title"><br><br><br><br><br>Dinas Koperasi <br> dan UKM Provinsi <br> Sumatera Barat</h1>
+                                    <p class="text">Mewujudkan Koperasi dan UMKM yang Tangguh, Berdaya Saing Tinggi, Berorientasi Pasar dan Berbasis Sumber Daya Lokal.</p>
                                 </div>
                             </div>
                         </div> <!-- row -->
                     </div> <!-- container -->
                     <div class="slider-image-box d-none d-lg-flex align-items-end">
                         <div class="slider-image">
-                            <img style="block-size: 720px" src="assets/images/slider/1.png" alt="">
+                            <img src="assets/images/IMG_20230113_130927_copy.jpg" alt="">
                         </div> <!-- slider-imgae -->
                     </div> <!-- slider-imgae box -->
                 </div> <!-- carousel-item -->
@@ -115,15 +115,16 @@
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="slider-content">
-                                    <h1 class="title">Based on Bootstrap 4</h1>
-                                    <p class="text">We blend insights and strategy to create digital products for forward-thinking organisations.</p>
+                                    <h1 class="title">Sistem Informasi Arsip Berkas</h1>
+                                    <p class="text">Sistem arsip adalah sistem yang digunakan untuk mengelola dan menyimpan dokumen atau data penting dalam jangka panjang. Ini bertujuan untuk memudahkan akses dan pencarian dokumen atau data tersebut serta untuk memastikan keamanan dan integritasnya.Sistem arsip modern saat ini biasanya menggunakan teknologi digital, seperti penyimpanan data dalam bentuk file elektronik. hal ini memudahkan dalam pengelolaan, pencarian, dan akses data yang diinginkan. Selain itu, sistem arsip digital juga memungkinkan untuk dapat melakukan backup data secara otomatis sehingga data tetap aman dan terjaga jika terjadi kerusakan atau kehilangan.
+                                        Secara keseluruhan, sistem arsip memainkan peran penting dalam menjaga dan mengelola dokumen penting dan data penting dalam jangka panjang untuk kebutuhan saat ini dan masa depan.</p>
                                 </div> <!-- slider-content -->
                             </div>
                         </div> <!-- row -->
                     </div> <!-- container -->
                     <div class="slider-image-box d-none d-lg-flex align-items-end">
                         <div class="slider-image">
-                            <img src="assets/images/slider/3.png" alt="Hero">
+                            <img src="assets/images/arsip.png" alt="Hero">
                         </div> <!-- slider-imgae -->
                     </div> <!-- slider-imgae box -->
                 </div> <!-- carousel-item -->
@@ -154,7 +155,7 @@
             </div> <!-- row -->
             
             <div class="row justify-content-center">
-                <a href="features-btn" href="#">
+                <a href="#">
                 <div class="col-lg-2 col-md-7 col-sm-9">
                     <div class="single-features mt-40">
                         <div class="features-title-icon d-flex justify-content-between">
@@ -167,7 +168,7 @@
                         </div>
                     </div> <!-- single features -->
                 </div></a>
-                <a href="features-btn" href="#">
+                <a href="#">
                 <div class="col-lg-2 col-md-7 col-sm-9">
                     <div class="single-features mt-40">
                         <div class="features-title-icon d-flex justify-content-between">
@@ -180,7 +181,7 @@
                         </div>
                     </div> <!-- single features -->
                 </div></a>
-                <a href="features-btn" href="#">
+                <a href="#">
                 <div class="col-lg-2 col-md-7 col-sm-9">
                     <div class="single-features mt-40">
                         <div class="features-title-icon d-flex justify-content-between">
@@ -193,7 +194,7 @@
                         </div>
                     </div> <!-- single features -->
                 </div></a>
-                <a href="features-btn" href="#">
+                <a href="#">
                 <div class="col-lg-2 col-md-7 col-sm-9">
                     <div class="single-features mt-40">
                         <div class="features-title-icon d-flex justify-content-between">
@@ -206,7 +207,7 @@
                         </div>
                     </div> <!-- single features -->
                 </div></a>
-                <a href="features-btn" href="#">
+                <a href="#">
                 <div class="col-lg-2 col-md-7 col-sm-9">
                     <div class="single-features mt-40">
                         <div class="features-title-icon d-flex justify-content-between">
@@ -219,7 +220,7 @@
                         </div>
                     </div> <!-- single features -->
                 </div></a>
-                <a href="features-btn" href="#">
+                <a href="#">
                 <div class="col-lg-2 col-md-7 col-sm-9">
                     <div class="single-features mt-40">
                         <div class="features-title-icon d-flex justify-content-between">
@@ -232,7 +233,7 @@
                         </div>
                     </div> <!-- single features -->
                 </div></a>
-                <a href="features-btn" href="#">
+                <a href="#">
                 <div class="col-lg-2 col-md-7 col-sm-9">
                     <div class="single-features mt-40">
                         <div class="features-title-icon d-flex justify-content-between">
@@ -245,7 +246,7 @@
                         </div>
                     </div> <!-- single features -->
                 </div></a>
-                <a href="features-btn" href="#">
+                <a href="#">
                 <div class="col-lg-2 col-md-7 col-sm-9">
                     <div class="single-features mt-40">
                         <div class="features-title-icon d-flex justify-content-between">
@@ -258,7 +259,7 @@
                         </div>
                     </div> <!-- single features -->
                 </div></a>
-                <a href="features-btn" href="#">
+                <a href="#">
                 <div class="col-lg-2 col-md-7 col-sm-9">
                     <div class="single-features mt-40">
                         <div class="features-title-icon d-flex justify-content-between">
@@ -271,7 +272,7 @@
                         </div>
                     </div> <!-- single features -->
                 </div></a>
-                <a href="features-btn" href="#">
+                <a href="#">
                 <div class="col-lg-2 col-md-7 col-sm-9">
                     <div class="single-features mt-40">
                         <div class="features-title-icon d-flex justify-content-between">
@@ -284,7 +285,7 @@
                         </div>
                     </div> <!-- single features -->
                 </div></a>
-                <a href="features-btn" href="#">
+                <a href="#">
                 <div class="col-lg-2 col-md-7 col-sm-9">
                     <div class="single-features mt-40">
                         <div class="features-title-icon d-flex justify-content-between">
@@ -297,7 +298,7 @@
                         </div>
                     </div> <!-- single features -->
                 </div></a>
-                <a href="features-btn" href="#">
+                <a href="#">
                 <div class="col-lg-2 col-md-7 col-sm-9">
                     <div class="single-features mt-40">
                         <div class="features-title-icon d-flex justify-content-between">
@@ -310,7 +311,7 @@
                         </div>
                     </div> <!-- single features -->
                 </div></a>
-                <a href="features-btn" href="#">
+                <a href="#">
                 <div class="col-lg-2 col-md-7 col-sm-9">
                     <div class="single-features mt-40">
                         <div class="features-title-icon d-flex justify-content-between">
@@ -323,7 +324,7 @@
                         </div>
                     </div> <!-- single features -->
                 </div></a>
-                <a href="features-btn" href="#">
+                <a href=/koperasi>
                 <div class="col-lg-2 col-md-7 col-sm-9">
                     <div class="single-features mt-40">
                         <div class="features-title-icon d-flex justify-content-between">
@@ -332,11 +333,11 @@
                             </div>
                         </div>
                         <div class="features-content" style="text-align: center;">
-                            <a class="features-btn" href="#" >Kota <br>Padang</a>
+                            <a class="features-btn" href="/koperasi" >Kota <br>Padang</a>
                         </div>
                     </div> <!-- single features -->
                 </div></a>
-                <a href="features-btn" href="#">
+                <a href="#">
                 <div class="col-lg 2 col-md-7 col-sm-9">
                     <div class="single-features mt-40">
                         <div class="features-title-icon d-flex justify-content-between">
@@ -349,7 +350,7 @@
                         </div>
                     </div> <!-- single features -->
                 </div></a>
-                <a href="features-btn" href="#">
+                <a href="#">
                 <div class="col-lg-2 col-md-7 col-sm-9">
                     <div class="single-features mt-40">
                         <div class="features-title-icon d-flex justify-content-between">
@@ -362,7 +363,7 @@
                         </div>
                     </div> <!-- single features -->
                 </div></a>
-                <a href="features-btn" href="#">
+                <a href="#">
                 <div class="col-lg-2 col-md-7 col-sm-9">
                     <div class="single-features mt-40">
                         <div class="features-title-icon d-flex justify-content-between">
@@ -375,7 +376,7 @@
                         </div>
                     </div> <!-- single features -->
                 </div></a>
-                <a href="features-btn" href="#">
+                <a href="#">
                 <div class="col-lg-2 col-md-7 col-sm-9">
                     <div class="single-features mt-40">
                         <div class="features-title-icon d-flex justify-content-between">
@@ -388,7 +389,7 @@
                         </div>
                     </div> <!-- single features -->
                 </div></a>
-                <a href="features-btn" href="#">
+                <a href="#">
                 <div class="col-lg-2 col-md-7 col-sm-9">
                     <div class="single-features mt-40">
                         <div class="features-title-icon d-flex justify-content-between">

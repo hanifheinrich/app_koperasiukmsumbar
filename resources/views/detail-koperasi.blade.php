@@ -74,27 +74,43 @@
                 <!-- Page-body start -->
                 <div class="page-body breadcrumb-page">
                     <!-- Card start -->
-                    <div class="card">
-                        <div class="card-block caption-breadcrumb">
+                    <div class="card card-style">
+                        <div class="card-header">
                             <div class="breadcrumb-header">
                                 <h4>Koperasi Solidarity Infinity</h4>
-                                <h6>Kota Padang</h6>
-                                <span>Jl. Andam Dewi, Kubu Marapalam, Kec. Padang Tim</span>
+                                <a href="#">
+                                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 outer-ellipsis"><i class="ti-arrow-up"></i>
+                                    </div>
+                                    <img class="card-header-right" src="assets/images/edit.png" width="30dp">
+                                </a>
+                                <h6><b>Kota Padang</b></h6>
                             </div>
                             <div class="page-header-breadcrumb">
-                                <ul class="breadcrumb-title">
-                                    <a href="assets/images/pdf.png">Kota Padang</a>
+                                <ul>
+                                    <a href="https://goo.gl/maps/jbfMD3LRk2d3QhJP6" target="blank" title="Maps">Jl. Andam Dewi, Kubu Marapalam, Kec. Padang Tim
                                     <li class="breadcrumb-item">
-                                        <a href="#!">
-                                            <i class="icofont icofont-map"></i>
-                                        </a>
+                                            <i class="icofont icofont-location-pin"></i>
                                     </li>
-                                    <li class="breadcrumb-item"><a href="#!">Breadcrumb</a>
-                                    </li>
-                                    <li class="breadcrumb-item"><a href="#!">Caption Breadcrumb</a>
-                                    </li>
+                                    </a>
                                 </ul>
                             </div>
+                        </div>
+                    </div>
+                    <h4>File Pendirian</h4>
+                    <div class="card card-style">
+                        <div class="card-header">
+                            <h6 class="text-underline"><a href="assets/images/pdf.png">nama_file_pendirian.pdf</a></h6>
+                        </div>
+                    </div>
+                    <h4>File PAD</h4>
+                    <div class="card card-style">
+                        <div class="card-header">
+                            <a href="#">
+                                <img class="card-header-right" src="assets/images/tambah.png" width="30dp">
+                            </a>
+                            <p class="text-underline"><a href="assets/images/pdf.png">nama_file_pad_2020.pdf</a></p>
+                            <p class="text-underline"><a href="assets/images/pdf.png">nama_file_pad_2021.pdf</a></p>
+                            <p class="text-underline"><a href="assets/images/pdf.png">nama_file_pad_2022.pdf</a></p>
                         </div>
                     </div>
                     <!-- Card end -->
@@ -105,5 +121,42 @@
         </div>
     </div>
 </div>
+
+<!-- Modal start -->
+<div class="modal fade modal-icon" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel">Themify Icons</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <div class="icon-list-demo">
+                            <i id="icon" class="fa fa-wpbeginner fa-lg"></i>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            Name
+                            <input class="form-control" type="text" id="name" value="fa fa-wpbeginner">
+                        </div>
+                        <div class="form-group">
+                            Code
+                            <input class="form-control" type="text" id="code" value='<i class="fa fa-wpbeginner"></i>'>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal end -->
     
 @endsection

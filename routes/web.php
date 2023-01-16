@@ -1,7 +1,9 @@
 <?php
 
-use app\Http\Controllers\AdminController;
 use Illuminate\Support\Facades\Route;
+use app\Http\Controllers\AdminController;
+use app\Http\Controllers\AuthController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -14,31 +16,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('user.main');
-});
+Route::get('/login','App\Http\Controllers\AuthController@login')->name('login')->middleware('guest');
+Route::post('/login','App\Http\Controllers\AuthController@auth')->middleware('guest');;
+Route::get('/logout','App\Http\Controllers\AuthController@logout')->middleware('auth');
 
-Route::get('/login', function () {
-    return view('auth.login');
-});
+Route::get('/dashboard-admin', 'App\Http\Controllers\AdminController@dashboard')->middleware('auth');
+Route::get('/profil', 'App\Http\Controllers\AdminController@profile')->middleware('auth');;
+Route::get('/master-data', 'App\Http\Controllers\AdminController@masterdata')->middleware('auth');;
+Route::get('/detail-master-data', 'App\Http\Controllers\AdminController@detailmasterdata')->middleware('auth');;
+Route::get('/arsip-pendirian', 'App\Http\Controllers\AdminController@arsippendirian')->middleware('auth');;
+Route::get('/arsip-pad', 'App\Http\Controllers\AdminController@arsippad')->middleware('auth');;
 
-Route::get('/dashboard-admin', function () {
-    return view('dashboard-admin',[
-        "title" => "Dashboard Admin"
-    ]);
-});
-
-Route::get('/master-koperasi-ukm', function(){
-    return view('master-koperasi-ukm',[
-        "title" => "Koperasi & UKM"
-    ]);
-});
-
-Route::get('/arsip-pendirian', function () {
-    return view('arsip-pendirian',[
-        "title" => "Arsip Pendirian Koperasi & UKM"
-    ]);
-});
 
 Route::get('/arsip-pad', function () {
     return view('arsip-pad',[
@@ -46,11 +34,30 @@ Route::get('/arsip-pad', function () {
     ]);
 });
 
-Route::get('/daftar-koperasi', function () {
-    return view('kabkota-admin',[
-        "title" => "Daftar Koperasi dan UKMz"
+Route::get('/tambah-koperasi', function () {
+    return view('tambah-koperasi',[
+        "title" => "Tambah Koperasi & UKM"
     ]);
 });
+
+Route::get('/detail-koperasi', function () {
+    return view('detail-koperasi',[
+        "title" => "Detail Koperasi & UKM"
+    ]);
+});
+
+Route::get('/tambah-koperasi', function () {
+    return view('tambah-koperasi',[
+        "title" => "Tambah Koperasi & UKM"
+    ]);
+});
+
+Route::get('/detail-koperasi', function () {
+    return view('detail-koperasi',[
+        "title" => "Detail Koperasi & UKM"
+    ]);
+});
+
 
 Route::get('/koperasi', function () {
     return view('user.koperasi',[
