@@ -96,15 +96,6 @@
                           <div class="card-header">
                             <h5>Tabel Arsip Pendirian</h5>
                             <div class="card-header-right">
-                              <form class="form-material">
-                                  <div class="form-group form-primary">
-                                      <input type="text" name="footer-email" class="form-control" required="">
-                                      <span class="form-bar"></span>
-                                      <label class="float-label"><i class="fa fa-search m-r-10"></i>Search</label>
-                                  </div>
-                              </form>
-                          </div>
-                            <div class="card-header-right">
                               <ul class="list-unstyled card-option">
                                 <li>
                                   <i class="fa fa fa-wrench open-card-option"></i>
