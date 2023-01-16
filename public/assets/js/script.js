@@ -202,6 +202,16 @@ $(document).ready(function() {
     }, 800);
 });
 
+
+$(document).ready(function () {
+    $('#example').DataTable({
+        lengthMenu: [
+            [10, 25, 50, -1],
+            [10, 25, 50, 'All'],
+        ],
+    });});
+                
+
 // toggle full screen
 function toggleFullScreen() {
     var a = $(window).height() - 10;

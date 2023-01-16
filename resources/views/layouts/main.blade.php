@@ -191,6 +191,9 @@
     <!-- custom js -->
     <script type="text/javascript" src="assets/pages/dashboard/custom-dashboard.js"></script>
     <script type="text/javascript" src="assets/js/script.js "></script>
+
+    <script src="assets/js/jquery.dataTables.min.js"></script>
+
 </body>
 
 </html>
