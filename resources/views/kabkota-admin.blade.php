@@ -18,7 +18,7 @@
         <ul class="pcoded-item pcoded-left-item">
 
           <li class="">
-                <a href="index.html" class="waves-effect waves-dark">
+                <a href="/dashboard-admin" class="waves-effect waves-dark">
                     <span class="pcoded-micon"><i class="ti-home"></i><b>D</b></span>
                     <span class="pcoded-mtext" data-i18n="nav.dash.main">Dashboard</span>
                     <span class="pcoded-mcaret"></span>
@@ -117,20 +117,20 @@
                                         <tr>
                                             <th>No</th>
                                             <th>Nama Koperasi dan UKM</th>
-                                            <th>Kabupaten/Kota</th>
                                             <th style="text-align: center">Action</th>
                                         </tr>
                                     </thead>
                                     <tbody>
+                                        @foreach ($dataWilayah as $dw)
                                         <tr>
-                                            <th scope="row">1</th>
-                                            <td>Mark</td>
-                                            <td>Otto</td>
+                                            <th scope="row">{{$loop->iteration}}</th>
+                                            <td>{{ $dw->nama_koperasi }}</td>
                                             <td style="text-align: center">
                                                 <a href="/dashboard-admin"><img src="assets/images/info.png" alt="" width="30px"></a>
                                                 <a href="/dashboard-admin"><img src="assets/images/delete.png" alt="" width="30px" style="margin-left: 40px"></a>
                                             </td>
                                         </tr>
+                                        @endforeach
                                     </tbody>
                                 </table>
                             </div>

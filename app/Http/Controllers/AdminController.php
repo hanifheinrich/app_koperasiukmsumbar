@@ -32,7 +32,7 @@ class Admincontroller extends Controller
   public function detailmasterdata()
   {
     $wilayah = Wilayah::all();
-    return view('detail-wilayah',[
+    return view('kabkota-admin',[
         "title" => "Koperasi & UKM",
         'dataWilayah' => $wilayah
       ]);
