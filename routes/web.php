@@ -15,7 +15,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('login');
+    return view('user.main');
+});
+
+Route::get('/login', function () {
+    return view('auth.login');
 });
 
 Route::get('/dashboard-admin', function () {
@@ -45,5 +49,11 @@ Route::get('/arsip-pad', function () {
 Route::get('/daftar-koperasi', function () {
     return view('kabkota-admin',[
         "title" => "Daftar Koperasi dan UKMz"
+    ]);
+});
+
+Route::get('/koperasi', function () {
+    return view('user.koperasi',[
+        "title" => "Daftar Koperasi dan UKM Kota"
     ]);
 });
