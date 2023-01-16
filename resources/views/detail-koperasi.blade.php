@@ -79,9 +79,7 @@
                             <div class="breadcrumb-header">
                                 <h4>Koperasi Solidarity Infinity</h4>
                                 <a href="#">
-                                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 outer-ellipsis"><i class="ti-arrow-up"></i>
-                                    </div>
-                                    <img class="card-header-right" src="assets/images/edit.png" width="30dp">
+                                    <img id="detail" class="card-header-right" src="assets/images/edit.png" width="30dp">
                                 </a>
                                 <h6><b>Kota Padang</b></h6>
                             </div>
@@ -127,32 +125,27 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title" id="myModalLabel">Themify Icons</h4>
+                <h4 class="modal-title" id="myModalLabel">Edit Koperasi dan UKM</h4>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
                 <div class="row">
-                    <div class="col-md-12 text-center">
-                        <div class="icon-list-demo">
-                            <i id="icon" class="fa fa-wpbeginner fa-lg"></i>
-                        </div>
-                    </div>
                     <div class="col-md-12">
                         <div class="form-group">
-                            Name
-                            <input class="form-control" type="text" id="name" value="fa fa-wpbeginner">
+                            Nama Koperasi dan UKM
+                            <input class="form-control" type="text" id="nama" value="Koperasi Solidarity Infinity">
                         </div>
                         <div class="form-group">
-                            Code
-                            <input class="form-control" type="text" id="code" value='<i class="fa fa-wpbeginner"></i>'>
+                            Alamat
+                            <input class="form-control" type="text" id="alamat" value='Jl. Andam Dewi, Kubu Marapalam, Kec. Padang Tim'>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary btn-style" data-dismiss="modal">Simpan</button>
             </div>
         </div>
     </div>

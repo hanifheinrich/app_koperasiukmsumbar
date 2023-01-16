@@ -1,6 +1,6 @@
   'use strict';
   $(document).ready(function() {
-      $('.icon-list-demo div div,.icon-list-demo div .outer-ellipsis').on('click', function() {
+      $('#detail').on('click', function() {
           var font_class = ($(this).children().attr('class'));
           $('.modal-icon').modal('show');
           $('#icon').removeClass();
