@@ -31,7 +31,7 @@ body {
     font-size: 0.875em;
     overflow-x: hidden;
     color: #455a64;
-    font-family: "Roboto", sans-serif;
+    font-family: "Montserrat", sans-serif;
     background-attachment: fixed;
     background-image: linear-gradient(
         rgba(255, 255, 255, 0.2) 177px,
@@ -418,7 +418,7 @@ strong {
     background-size: cover;
     position: relative;
     border-radius: 0;
-    color: #fff;
+    color: black;
 }
 .page-header:before {
     content: "";
@@ -7714,7 +7714,6 @@ table tbody .border-bottom-info td {
 }
 .main-menu .main-menu-header {
     padding: 15px 0;
-    background-image: url("../images/user-bg.jpg");
     background-size: cover;
     text-align: center;
     position: relative;
@@ -13150,9 +13149,11 @@ body[themebg-pattern="theme6"] {
 .pcoded .pcoded-header[header-theme="theme6"] a {
     color: #fff;
 }
-.pcoded[fream-type="theme1"] .page-header:before,
+.pcoded[fream-type="theme1"] .page-header:before{
+    background: white;
+}
 .pcoded[fream-type="theme1"] .main-menu .main-menu-header:before {
-    background: rgba(68, 138, 255, 0.5);
+    background: #036d19;
 }
 .pcoded[fream-type="theme2"] .page-header:before,
 .pcoded[fream-type="theme2"] .main-menu .main-menu-header:before {
@@ -13757,8 +13758,8 @@ body.menu-bottom #collapse-menu {
 }
 
 .btn-danger {
-    background-color: #ff5252;
-    border-color: #ff5252;
+    background-color: #FF0000;
+    border-color: #FF0000;
     color: #fff;
     cursor: pointer;
     -webkit-transition: all ease-in 0.3s;
@@ -13879,6 +13880,15 @@ body.menu-bottom #collapse-menu {
 .btn-disabled {
     background-color: rgba(68, 138, 255, 0.5);
     border-color: rgba(68, 138, 255, 0.5);
+    color: #fff;
+    cursor: pointer;
+    -webkit-transition: all ease-in 0.3s;
+    transition: all ease-in 0.3s;
+}
+
+.btn-green {
+    background-color: #09A129;
+    border-color: #09A129;
     color: #fff;
     cursor: pointer;
     -webkit-transition: all ease-in 0.3s;
@@ -24609,7 +24619,7 @@ body.dark .page-header:before {
 }
 
 .fixed-button {
-    position: fixed;
+    position: none;
     bottom: -50px;
     right: 30px;
     -webkit-box-shadow: 0 15px 50px rgba(0, 0, 0, 0.35);
@@ -24621,5 +24631,45 @@ body.dark .page-header:before {
 }
 .fixed-button.active {
     bottom: 50px;
-    opacity: 1;
+    opacity: 0;
+}
+
+.myInput {
+  background-image: url('/css/searchicon.png'); /* Add a search icon to input */
+  background-position: 10px 12px; /* Position the search icon */
+  background-repeat: no-repeat; /* Do not repeat the icon image */
+  width: 100%; /* Full-width */
+  font-size: 16px; /* Increase font-size */
+  padding: 12px 20px 12px 40px; /* Add some padding */
+  margin-bottom: 12px; /* Add some space below the input */
+}
+
+.myInput {
+  background-image: url('/css/searchicon.png'); /* Add a search icon to input */
+  background-position: 10px 12px; /* Position the search icon */
+  background-repeat: no-repeat; /* Do not repeat the icon image */
+  width: 100%; /* Full-width */
+  font-size: 16px; /* Increase font-size */
+  padding: 12px 20px 12px 40px; /* Add some padding */
+  margin-bottom: 12px; /* Add some space below the input */
+}
+
+.btn-style {
+    box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    bottom: 20px;
+}
+
+.card-style {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.card-style {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.icon-style-right {
+    
 }

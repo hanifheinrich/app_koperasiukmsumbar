@@ -27,5 +27,62 @@ Route::get('/detail-master-data/{id}', 'App\Http\Controllers\AdminController@sho
 Route::get('/arsip-pendirian', 'App\Http\Controllers\AdminController@arsippendirian')->middleware('auth');;
 Route::get('/arsip-pad', 'App\Http\Controllers\AdminController@arsippad')->middleware('auth');;
 
+Route::get('/tambah-koperasi', function () {
+    return view('tambah-koperasi',[
+        "title" => "Tambah Koperasi & UKM"
+    ]);
+});
 
+Route::get('/detail-koperasi', function () {
+    return view('detail-koperasi',[
+        "title" => "Detail Koperasi & UKM"
+    ]);
+});
 
+Route::get('/tambah-koperasi', function () {
+    return view('tambah-koperasi',[
+        "title" => "Tambah Koperasi & UKM"
+    ]);
+});
+
+Route::get('/detail-koperasi', function () {
+    return view('detail-koperasi',[
+        "title" => "Detail Koperasi & UKM"
+    ]);
+});
+
+Route::get('/daftar-koperasi', function () {
+    return view('kabkota-admin',[
+        "title" => "Daftar Koperasi dan UKMz"
+    ]);
+});
+
+Route::get('/koperasi', function () {
+    return view('user.koperasi',[
+        "title" => "Daftar Koperasi dan UKM Kota"
+    ]);
+});
+
+Route::get('/kota-admin', function () {
+    return view('daftar-kota-admin',[
+        "title" => "Daftar Koperasi dan UKM Kota"
+    ]);
+});
+
+Route::get('/detail-pendirian', function () {
+    return view('user.detail-pendirian',[
+        "title" => "Daftar Koperasi dan UKM Kota"
+    ]);
+});
+
+Route::get('/daftar-PAD', function () {
+    return view('user.daftar-PAD',[
+        "title" => "Daftar Koperasi dan UKM Kota"
+    ]);
+});
+
+Route::get('/detail-pad', function () {
+    return view('user.detail-pad',[
+        "title" => "Daftar Koperasi dan UKM Kota"
+    ]);
+});
