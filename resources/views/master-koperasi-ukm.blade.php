@@ -114,7 +114,7 @@
                             </div> 
                             <div class="card-block table-border-style">
                               <div class="table-responsive">
-                                <table class="table table-hover">
+                                <table class="table table-hover" id="myTable">
                                   <thead>
                                     <tr>
                                       <th>No</th>
@@ -125,9 +125,9 @@
                                   <tbody>
                                     @foreach ($dataWilayah as $dw)
                                     <tr>
-                                      <th scope="row">{{$loop->iteration}}</th>
+                                      <td scope="row">{{$loop->iteration}}</td>
                                       <td>{{ $dw->Jenis }} {{ $dw->Nama }}</td>
-                                      <td>@mdo</td>
+                                      <td><a href="/detail-master-data/{{ $dw ->ID }}">Detail</a></td>
                                     </tr>
                                     @endforeach
                                   </tbody>

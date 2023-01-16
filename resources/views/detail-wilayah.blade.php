@@ -72,8 +72,9 @@
             <div class="row align-items-center">
                 <div class="col-md-8">
                     <div class="page-header-title">
-                        <h5 class="m-b-10">Daftar Kota dan Kabupaten</h5>
-                        <p class="m-b-0">Pilih Kota atau Kabupaten terlebih dahulu</p>
+                        <h5 class="m-b-10">Z</h5>
+                        <h5>{{$dataWilayah->Jenis}} {{$dataWilayah->Nama}}</h5>
+                        <p class="m-b-0">Pilih Koperasi yang ada di {{$dataWilayah->Jenis}} {{$dataWilayah->Nama}} untuk melihat Arsip Pendirian dan PAD</p>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -120,17 +121,17 @@
                                     <tr>
                                       <th>No</th>
                                       <th>Nama</th>
-                                      <th>Action</th>
+                                      <th>File Pendirian</th>
+                                      <th>File PAD</th>
                                     </tr>
                                   </thead>
                                   <tbody>
-                                    @foreach ($dataWilayah as $dw)
                                     <tr>
-                                      <th scope="row">{{$loop->iteration}}</th>
-                                      <td>{{ $dw->Jenis }} {{ $dw->Nama }}</td>
+                                      <th scope="row">1</th>
+                                      <td>Nama</td>
+                                      <td><i class="ti-layout-tab"></i></td>
                                       <td><i class="ti-layout-tab"></i></td>
                                     </tr>
-                                    @endforeach
                                   </tbody>
                                 </table>
                               </div>
