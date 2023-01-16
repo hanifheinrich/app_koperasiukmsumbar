@@ -94,7 +94,7 @@
                           <!-- Hover table card start -->
                           <div class="card">
                             <div class="card-header">
-                              <h5>Tabel Wilayah Sumatera Barat</h5>
+                              <h5>Daftar Koperasi & UKM</h5>
                               <span
                                 >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores adipisci pariatur odit omnis atque architecto ipsa quas neque eveniet cumque.</span
                               >
@@ -111,14 +111,15 @@
                                   <li><i class="fa fa-trash close-card"></i></li>
                                 </ul>
                               </div>
-                            </div> 
+                            </div>
+                        
                             <div class="card-block table-border-style">
                               <div class="table-responsive">
                                 <table class="table table-hover">
                                   <thead>
                                     <tr>
                                       <th>No</th>
-                                      <th>Wilayah</th>
+                                      <th>Nama</th>
                                       <th>Action</th>
                                     </tr>
                                   </thead>
@@ -127,7 +128,7 @@
                                     <tr>
                                       <th scope="row">{{$loop->iteration}}</th>
                                       <td>{{ $dw->Jenis }} {{ $dw->Nama }}</td>
-                                      <td>@mdo</td>
+                                      <td><i class="ti-layout-tab"></i></td>
                                     </tr>
                                     @endforeach
                                   </tbody>
