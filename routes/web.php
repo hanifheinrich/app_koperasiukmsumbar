@@ -57,3 +57,27 @@ Route::get('/koperasi', function () {
         "title" => "Daftar Koperasi dan UKM Kota"
     ]);
 });
+
+Route::get('/kota-admin', function () {
+    return view('daftar-kota-admin',[
+        "title" => "Daftar Koperasi dan UKM Kota"
+    ]);
+});
+
+Route::get('/detail-pendirian', function () {
+    return view('user.detail-pendirian',[
+        "title" => "Daftar Koperasi dan UKM Kota"
+    ]);
+});
+
+Route::get('/daftar-PAD', function () {
+    return view('user.daftar-PAD',[
+        "title" => "Daftar Koperasi dan UKM Kota"
+    ]);
+});
+
+Route::get('/detail-pad', function () {
+    return view('user.detail-pad',[
+        "title" => "Daftar Koperasi dan UKM Kota"
+    ]);
+});

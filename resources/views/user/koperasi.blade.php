@@ -20,9 +20,9 @@
     
     
     <body>
-        <nav class="navbar navbar-light bg-green">
+        <nav class="navbar navbar-light bg-green fixed-top">
             <div class="container-fluid">
-              <a class="navbar-brand,navbar-collapse" href="#">
+              <a class="navbar-brand,navbar-collapse" href="/">
                 <img style="margin-right:10px;" src="assets/images/LAMBANG-KOPERASI.png" alt="" width="50" height="48" style="left: 20px;"  >
                 <img style="margin-right:30px;" src="assets/images/logo sumbar.png" alt="" width="45" height="51.45" right="20" style="left: 20px;" >
                 <span style="color: rgb(255, 255, 255);"> <b> DINAS KOPERASI & UKM PROVINSI SUMATERA BARAT</b></span>  
@@ -30,7 +30,7 @@
             </div>
         </nav>
 
-        <div class="container" style="padding-top: 30px">
+        <div class="container" style="padding-top: 100px">
             <img style="margin-right:10px; left:20px ; block-size:150px" src="assets/images/logo_padang.png" alt="" >
             <span style="color: rgb(0, 0, 0); font-size:40px"> <b> Daftar Koperasi dan UKM Kota Padang</b></span>
     
@@ -55,57 +55,57 @@
                         <td>Koperasi Pol PP</td>
                         <td>Jl. Linggar Jati 2</td>
                         <td>
-                            <a href="/dashboard-admin"><img src="assets/images/pdf.png" alt="" width="30px">Cek File Arsipnya disini</a>
+                            <a href="/detail-pendirian"><img src="assets/images/pdf.png" alt="" width="30px">Cek File Arsipnya disini</a>
                         </td>
                         <td>
-                            <a href="/dashboard-admin"><img src="assets/images/info.png" alt="" width="30px">Cek File Arsipnya disini</a>
+                            <a href="/daftar-PAD"><img src="assets/images/info.png" alt="" width="30px">Cek File Arsipnya disini</a>
                         </td>
                     </tr>
                     <tr>
                         <td>Koperasi PPNI</td>
                         <td>Jalan Linggar Jati 2</td>
                         <td>
-                            <a href="/dashboard-admin"><img src="assets/images/pdf.png" alt="" width="30px">Cek File Arsipnya disini</a>
+                            <a href="/detail-pendirian"><img src="assets/images/pdf.png" alt="" width="30px">Cek File Arsipnya disini</a>
                         </td>
                         <td>
-                            <a href="/dashboard-admin"><img src="assets/images/info.png" alt="" width="30px">Cek File Arsipnya disini</a>
+                            <a href="/daftar-PAD"><img src="assets/images/info.png" alt="" width="30px">Cek File Arsipnya disini</a>
                         </td>
                     </tr>
                     <tr>
                         <td>Koperasi Polri</td>
                         <td>Jalan Linggar Jati 2</td>
                         <td>
-                            <a href="/dashboard-admin"><img src="assets/images/pdf.png" alt="" width="30px">Cek File Arsipnya disini</a>
+                            <a href="/detail-pendirian"><img src="assets/images/pdf.png" alt="" width="30px">Cek File Arsipnya disini</a>
                         </td>
                         <td>
-                            <a href="/dashboard-admin"><img src="assets/images/info.png" alt="" width="30px">Cek File Arsipnya disini</a>
+                            <a href="/daftar-PAD"><img src="assets/images/info.png" alt="" width="30px">Cek File Arsipnya disini</a>
                         </td>
                     </tr>
                     <tr>
                         <td>Koperasi Affah Iyah</td>
                         <td>Affan tuh</td>
                         <td>
-                            <a href="/dashboard-admin"><img src="assets/images/pdf.png" alt="" width="30px">Cek File Arsipnya disini</a>
+                            <a href="/detail-pendirian"><img src="assets/images/pdf.png" alt="" width="30px">Cek File Arsipnya disini</a>
                         </td>
                         <td>
-                            <a href="/dashboard-admin"><img src="assets/images/info.png" alt="" width="30px">Cek File Arsipnya disini</a>
+                            <a href="/daftar-PAD"><img src="assets/images/info.png" alt="" width="30px">Cek File Arsipnya disini</a>
                         </td>
                     </tr>
                     <tr>
                         <td>Koperasi Mahasiswa</td>
                         <td>Universitas Andalas</td>
                         <td>
-                            <a href="/dashboard-admin"><img src="assets/images/pdf.png" alt="" width="30px">Cek File Arsipnya disini</a>
+                            <a href="/detail-pendirian"><img src="assets/images/pdf.png" alt="" width="30px">Cek File Arsipnya disini</a>
                         </td>
                         <td>
-                            <a href="/dashboard-admin"><img src="assets/images/info.png" alt="" width="30px">Cek File Arsipnya disini</a>
+                            <a href="/daftar-PAD"><img src="assets/images/info.png" alt="" width="30px">Cek File Arsipnya disini</a>
                         </td>
                     </tr>
                 </tbody>
             </table>
         </div>
         
-        <footer class="text-center text-white fixed-bottom" style="background-color: #036D19;">
+        <footer class="text-center text-white" style="background-color: #036D19;">
             <!-- Copyright -->
             <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
               Sistem Informasi Pengarsipan Dinas Koperasi & UKM

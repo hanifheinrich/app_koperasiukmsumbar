@@ -21,7 +21,7 @@
 <body>
     <nav class="navbar navbar-light bg-green">
         <div class="container-fluid">
-          <a class="navbar-brand,navbar-collapse" href="#">
+          <a class="navbar-brand,navbar-collapse" href="/">
             <img style="margin-right:10px;" src="assets/images/LAMBANG-KOPERASI.png" alt="" width="50" height="48" style="left: 20px;"  >
             <img style="margin-right:30px;" src="assets/images/logo sumbar.png" alt="" width="45" height="51.45" right="20" style="left: 20px;" >
             <span style="color: rgb(255, 255, 255);"> <b> DINAS KOPERASI & UKM PROVINSI SUMATERA BARAT</b></span>
