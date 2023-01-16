@@ -57,3 +57,9 @@ Route::get('/koperasi', function () {
         "title" => "Daftar Koperasi dan UKM Kota"
     ]);
 });
+
+Route::get('/profil', function () {
+    return view('profil',[
+        "title" => "Profil Admin"
+    ]);
+});
