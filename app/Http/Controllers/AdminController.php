@@ -38,6 +38,18 @@ class Admincontroller extends Controller
       ]);
   }
 
+  public function destroy($id_koperasi)
+  {
+    if (Wilayah::destroy($id_koperasi))
+    {
+      session()->flash ('success', 'Koperasi dan UKM berhasil dihapus');
+    }else{
+      session()->flash ('failed', 'Koperasi dan UKM gagal dihapus');
+    }
+
+    return redirect()->back();
+  }
+
 
   public function arsippendirian(){
     return view('arsip-pendirian',[
@@ -50,4 +62,9 @@ class Admincontroller extends Controller
         "title" => "Arsip Perubahan Anggaran Dasar Koperasi & UKM"
     ]);
   }
+
+  // @param int $id_koperasi
+  // @return Illuminate\Http\Request
+
+  
 }

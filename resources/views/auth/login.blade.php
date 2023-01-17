@@ -28,7 +28,7 @@
             
         </a>
         </div>
-      </nav>
+      </nav> 
       <section >
         <div class="container py-5">
           <div class="row d-flex justify-content-center align-items-center">
@@ -41,7 +41,7 @@
                   </div>
                   <div class="col-md-6 col-lg-7 d-flex align-items-center">
                     <div class="card-body p-4 p-lg-5 text-black">
-      
+       
                       <form>
       
                         <div class="d-flex align-items-center mb-3 pb-1">

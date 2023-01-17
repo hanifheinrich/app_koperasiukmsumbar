@@ -27,6 +27,7 @@ Route::get('/detail-master-data', 'App\Http\Controllers\AdminController@detailma
 Route::get('/arsip-pendirian', 'App\Http\Controllers\AdminController@arsippendirian')->middleware('auth');;
 Route::get('/arsip-pad', 'App\Http\Controllers\AdminController@arsippad')->middleware('auth');;
 
+Route::get('/delete-koperasi/{id_koperasi}', 'App\Http\Controllers\AdminController@destroy')->middleware('auth');;
 
 Route::get('/arsip-pad', function () {
     return view('arsip-pad',[
@@ -62,5 +63,29 @@ Route::get('/detail-koperasi', function () {
 Route::get('/koperasi', function () {
     return view('user.koperasi',[
         "title" => "Daftar Koperasi dan UKM Kota"
+    ]);
+});
+
+Route::get('/', function () {
+    return view('user.main',[
+        "title" => "Sistem Informasi Arsip Berkas Dinas Koperasi dan UKM"
+    ]);
+});
+
+Route::get('/detail-pendirian', function () {
+    return view('user.detail-pendirian',[
+        "title" => "Sistem Informasi Arsip Berkas Dinas Koperasi dan UKM"
+    ]);
+});
+
+Route::get('/daftar-PAD', function () {
+    return view('user.daftar-PAD',[
+        "title" => "Sistem Informasi Arsip Berkas Dinas Koperasi dan UKM"
+    ]);
+});
+
+Route::get('/detail-pad', function () {
+    return view('user.detail-pad',[
+        "title" => "Sistem Informasi Arsip Berkas Dinas Koperasi dan UKM"
     ]);
 });
