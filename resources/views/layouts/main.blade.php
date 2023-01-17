@@ -9,6 +9,8 @@
     <meta name="description" content="Mega Able Bootstrap admin template made using Bootstrap 4 and it has huge amount of ready made feature, UI components, pages which completely fulfills any dashboard needs." />
     <meta name="keywords" content="bootstrap, bootstrap admin template, admin theme, admin dashboard, dashboard template, admin template, responsive" />
     <meta name="author" content="codedthemes" />
+    <!-- Datatables-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.13.1/datatables.min.css"/>
     <!-- Favicon icon -->
     <link rel="icon" href="assets/images/koperasi.gif" type="image/x-icon">
     <!-- Google font-->
@@ -133,12 +135,12 @@
                           <li class="user-profile header-notification">
                               <a href="#!" class="waves-effect waves-light">
                                   <img src="assets/images/avatar-4.jpg" class="img-radius" alt="User-Profile-Image">
-                                  <span>Admin</span>
+                                  <span>{{ Auth::user()->name }}</span>
                                   <i class="ti-angle-down"></i>
                               </a>
                               <ul class="show-notification profile-notification">
                                   <li class="waves-effect waves-light">
-                                      <a href="auth-normal-sign-in.html">
+                                      <a href="/logout">
                                           <i class="ti-layout-sidebar-left"></i> Logout
                                       </a>
                                   </li>
@@ -195,15 +197,13 @@
     <!-- custom js -->
     <script type="text/javascript" src="assets/pages/dashboard/custom-dashboard.js"></script>
     <script type="text/javascript" src="assets/js/script.js "></script>
-
-    <script src="assets/js/jquery.dataTables.min.js"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/5.5.2/bootbox.min.js"></script>
-
-    <script type="text/javascript" src="assets/pages/icon-modal.js"></script>
-
-    <script src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
-
+    <!-- Datatables -->
+    <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.13.1/datatables.min.js"></script>
+    <script>
+        $(document).ready( function () {
+            $('#myTable').DataTable();
+        } );
+    </script>
 </body>
 
 </html>

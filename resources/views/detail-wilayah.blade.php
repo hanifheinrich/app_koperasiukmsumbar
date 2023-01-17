@@ -72,8 +72,9 @@
             <div class="row align-items-center">
                 <div class="col-md-8">
                     <div class="page-header-title">
-                        <h5 class="m-b-10">Daftar Kota dan Kabupaten</h5>
-                        <p class="m-b-0">Pilih Kota atau Kabupaten terlebih dahulu</p>
+                        <h5 class="m-b-10">Z</h5>
+                        <h5>{{$dataWilayah->Jenis}} {{$dataWilayah->Nama}}</h5>
+                        <p class="m-b-0">Pilih Koperasi yang ada di {{$dataWilayah->Jenis}} {{$dataWilayah->Nama}} untuk melihat Arsip Pendirian dan PAD</p>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -94,7 +95,7 @@
                           <!-- Hover table card start -->
                           <div class="card">
                             <div class="card-header">
-                              <h5>Tabel Wilayah Sumatera Barat</h5>
+                              <h5>Daftar Koperasi & UKM</h5>
                               <span
                                 >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores adipisci pariatur odit omnis atque architecto ipsa quas neque eveniet cumque.</span
                               >
@@ -111,25 +112,26 @@
                                   <li><i class="fa fa-trash close-card"></i></li>
                                 </ul>
                               </div>
-                            </div> 
+                            </div>
+                        
                             <div class="card-block table-border-style">
                               <div class="table-responsive">
-                                <table class="table table-hover" id="myTable">
+                                <table class="table table-hover">
                                   <thead>
                                     <tr>
                                       <th>No</th>
-                                      <th>Wilayah</th>
-                                      <th>Action</th>
+                                      <th>Nama</th>
+                                      <th>File Pendirian</th>
+                                      <th>File PAD</th>
                                     </tr>
                                   </thead>
                                   <tbody>
-                                    @foreach ($dataWilayah as $dw)
                                     <tr>
-                                      <td scope="row">{{$loop->iteration}}</td>
-                                      <td>{{ $dw->Jenis }} {{ $dw->Nama }}</td>
-                                      <td><a href="/detail-master-data/{{ $dw ->ID }}">Detail</a></td>
+                                      <th scope="row">1</th>
+                                      <td>Nama</td>
+                                      <td><i class="ti-layout-tab"></i></td>
+                                      <td><i class="ti-layout-tab"></i></td>
                                     </tr>
-                                    @endforeach
                                   </tbody>
                                 </table>
                               </div>
