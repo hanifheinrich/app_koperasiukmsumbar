@@ -121,7 +121,7 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        @foreach ($dataWilayah as $dw)
+                                        @foreach ($Wilayah as $dw)
                                         <tr>
                                             <th scope="row">{{$loop->iteration}}</th>
                                             <td>{{ $dw->nama_koperasi }}</td>
