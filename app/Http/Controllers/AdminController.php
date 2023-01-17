@@ -30,7 +30,6 @@ class Admincontroller extends Controller
   }
 
   public function show()
-  public function show()
   {
     $wilayah = Wilayah::all();
     return view('kabkota-admin',[
