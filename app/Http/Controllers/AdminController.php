@@ -15,7 +15,7 @@ class Admincontroller extends Controller
   }
 
   public function profile(){
-    return view('profile',[
+    return view('profil',[
         "title" => "Profil"
       ]);
   }
