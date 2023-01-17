@@ -98,72 +98,76 @@
   <!-- Page-header end -->
 <div class="pcoded-inner-content">
   <!-- Main-body start -->
-                        <!-- Hover table card start -->
-                        <div class="card">
-                          <div class="card-header">
-                            <h5>Tabel Arsip Perubahan Anggaran Dasar</h5>
-                            <span
-                              >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores adipisci pariatur odit omnis atque architecto ipsa quas neque eveniet cumque.</span
-                            >
-                            <div class="card-header-right">
-                              <ul class="list-unstyled card-option">
-                                <li>
-                                  <i class="fa fa fa-wrench open-card-option"></i>
-                                </li>
-                                <li>
-                                  <i class="fa fa-window-maximize full-card"></i>
-                                </li>
-                                <li><i class="fa fa-minus minimize-card"></i></li>
-                                <li><i class="fa fa-refresh reload-card"></i></li>
-                                <li><i class="fa fa-trash close-card"></i></li>
-                              </ul>
-                            </div>
-                          </div>
-                          <div class="card-block table-border-style">
-                            <div class="table-responsive">
-                              <table class="table table-hover">
-                                <thead>
-                                  <tr>
-                                    <th>No</th>
-                                    <th>Nama Koperasi</th>
-                                    <th>Kota/Kabupaten</th>
-                                    <th>File 1</th>
-                                    <th>File 2</th>
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                  <tr>
-                                    <th scope="row">1</th>
-                                    <td>Mark</td>
-                                    <td>Otto</td>
-                                    <td>@mdo</td>
-                                    <td>@mdo</td>
-                                  </tr>
-                                  <tr>
-                                    <th scope="row">2</th>
-                                    <td>Jacob</td>
-                                    <td>Thornton</td>
-                                    <td>@fat</td>
-                                    <td>@fat</td>
-                                  </tr>
-                                  <tr>
-                                    <th scope="row">3</th>
-                                    <td>Larry</td>
-                                    <td>the Bird</td>
-                                    <td>@twitter</td>
-                                    <td>@twitter</td>
-                                  </tr>
-                                </tbody>
-                              </table>
-                            </div>
-                          </div>
-                        </div>
-                        <!-- Hover table card end -->
-  <div class="main-body">
-      <div class="page-wrapper">
-      </div>
-      <div id="styleSelector"> </div>
-  </div>
+<!-- Basic table card start -->
+                      <div class="card">
+                        <div class="card-header">
+                          <h5>Arsip PAD Koperasi dan UKM</h5>
+                          <br><br>
+                          <table id="table" 
+                          data-toggle="table"
+                          data-search="true"
+                          {{-- data-filter-control="true"  --}}
+                          {{-- data-show-export="true" --}}
+                          data-click-to-select="true"
+                          data-toolbar="#toolbar">
+
+    <thead>
+      <tr>
+          <th data-field="prenom" data-filter-control="input" data-sortable="true">No</th>
+          <th data-field="location" data-filter-control="select" >Nama Koperasi/ukm</th>
+          <th data-field="date" data-filter-control="select" >Wilayah </th>
+          <th data-field="examen" data-filter-control="select">File Arsip PAD</th>
+      </tr>
+   </thead>
+  <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Koperasi Solidarity Infinity</td>
+        <td>Kota Padang</td>
+        <td>
+          <a href="/dashboard-admin"><img src="assets/images/pdf.png" alt="" width="30px">Lihat!</a>
+      </td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Koperasi Sejahtera Makmur</td>
+        <td>Kabupaten Pasaman Barat</td>
+        <td>
+          <a href="/dashboard-admin"><img src="assets/images/pdf.png" alt="" width="30px">Lihat!</a>
+      </td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>Koperasi Papa Mama</td>
+        <td>Kota Solok</td>
+        <td>
+          <a href="/dashboard-admin"><img src="assets/images/pdf.png" alt="" width="30px">Lihat!</a>
+      </td>
+      </tr>
+      <tr>
+        <th scope="row">4</th>
+        <td>Koperasi Friendzone</td>
+        <td>Kota Payakumbuh</td>
+        <td>
+          <a href="/dashboard-admin"><img src="assets/images/pdf.png" alt="" width="30px">Lihat!</a>
+      </td>
+      </tr>
+      <tr>
+        <th scope="row">5</th>
+        <td>Koperasi Menua Bersama</td>
+        <td>Kabupaten Pesisir Selatan</td>
+        <td>
+          <a href="/dashboard-admin"><img src="assets/images/pdf.png" alt="" width="30px">Lihat!</a>
+      </td>
+      </tr>
+  </tbody>
+</table>
 </div>
-</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/bootstrap-table@1.17.1/dist/bootstrap-table.min.js"></script>
+
+
 @endsection

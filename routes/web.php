@@ -84,3 +84,9 @@ Route::get('/detail-pad', function () {
         "title" => "Sistem Informasi Arsip Berkas Dinas Koperasi dan UKM"
     ]);
 });
+
+Route::get('/profil', function () {
+    return view('profil',[
+        "title" => "Profil Admin"
+    ]);
+});
