@@ -29,11 +29,25 @@ Route::get('/arsip-pad', 'App\Http\Controllers\AdminController@arsippad')->middl
 
 Route::get('/delete-koperasi/{id_koperasi}', 'App\Http\Controllers\AdminController@destroy')->middleware('auth');;
 
+
+Route::get('/master-koperasi-ukm', function(){
+    return view('master-koperasi-ukm',[
+        "title" => "Koperasi & UKM"
+    ]);
+});
+
+Route::get('/arsip-pendirian', function () {
+    return view('arsip-pendirian',[
+        "title" => "Arsip Pendirian Koperasi & UKM"
+    ]);
+});
+
 Route::get('/arsip-pad', function () {
     return view('arsip-pad',[
         "title" => "Arsip Perubahan Anggaran Dasar Koperasi & UKM"
     ]);
 });
+
 
 Route::get('/tambah-koperasi', function () {
     return view('tambah-koperasi',[

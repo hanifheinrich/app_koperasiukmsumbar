@@ -25,16 +25,17 @@ class Admincontroller extends Controller
     $wilayah = Wilayah::get();
     return view('master-koperasi-ukm',[
         "title" => "Koperasi & UKM",
-        'dataWilayah' => $wilayah
+        'Wilayah' => $wilayah
       ]);
   }
 
+  public function show()
   public function show()
   {
     $wilayah = Wilayah::all();
     return view('kabkota-admin',[
         "title" => "Koperasi & UKM",
-        'dataWilayah' => $wilayah
+        'Wilayah' => $wilayah
       ]);
   }
 
