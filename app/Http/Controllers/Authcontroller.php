@@ -45,4 +45,6 @@ class Authcontroller extends Controller
     return redirect('/login');
 
   }
+
+  
 }

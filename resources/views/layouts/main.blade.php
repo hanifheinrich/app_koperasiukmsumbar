@@ -197,13 +197,15 @@
     <!-- custom js -->
     <script type="text/javascript" src="assets/pages/dashboard/custom-dashboard.js"></script>
     <script type="text/javascript" src="assets/js/script.js "></script>
-    <!-- Datatables -->
-    <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.13.1/datatables.min.js"></script>
-    <script>
-        $(document).ready( function () {
-            $('#myTable').DataTable();
-        } );
-    </script>
+
+    <script src="assets/js/jquery.dataTables.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/5.5.2/bootbox.min.js"></script>
+
+    <script type="text/javascript" src="assets/pages/icon-modal.js"></script>
+
+    <script src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
+    
 </body>
 
 </html>

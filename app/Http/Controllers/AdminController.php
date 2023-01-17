@@ -31,11 +31,23 @@ class Admincontroller extends Controller
 
   public function show($id)
   {
-    $wilayah = Wilayah::find($id);
-    return view('testerdata',[
-        "title" => "Detail Koperasi & UKM",
+    $wilayah = Wilayah::all();
+    return view('kabkota-admin',[
+        "title" => "Koperasi & UKM",
         'dataWilayah' => $wilayah
       ]);
+  }
+
+  public function destroy($id_koperasi)
+  {
+    if (Wilayah::destroy($id_koperasi))
+    {
+      session()->flash ('success', 'Koperasi dan UKM berhasil dihapus');
+    }else{
+      session()->flash ('failed', 'Koperasi dan UKM gagal dihapus');
+    }
+
+    return redirect()->back();
   }
 
 
@@ -50,4 +62,9 @@ class Admincontroller extends Controller
         "title" => "Arsip Perubahan Anggaran Dasar Koperasi & UKM"
     ]);
   }
+
+  // @param int $id_koperasi
+  // @return Illuminate\Http\Request
+
+  
 }

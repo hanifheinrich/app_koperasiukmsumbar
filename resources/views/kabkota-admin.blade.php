@@ -18,7 +18,7 @@
         <ul class="pcoded-item pcoded-left-item">
 
           <li class="">
-                <a href="index.html" class="waves-effect waves-dark">
+                <a href="/dashboard-admin" class="waves-effect waves-dark">
                     <span class="pcoded-micon"><i class="ti-home"></i><b>D</b></span>
                     <span class="pcoded-mtext" data-i18n="nav.dash.main">Dashboard</span>
                     <span class="pcoded-mcaret"></span>
@@ -112,25 +112,33 @@
                         </div>
                         <div class="card-block table-border-style">
                             <div class="table-responsive">
+                                @if(session()->has('success'))
+                                    {{ session()->get('success') }}
+                                @endif
+ 
+                                @if(session()->has('failed'))
+                                    {{ session()->get('failed') }}
+                                @endif
+
                                 <table class="table table-hover" id="example">
                                     <thead>
                                         <tr>
                                             <th>No</th>
                                             <th>Nama Koperasi dan UKM</th>
-                                            <th>Kabupaten/Kota</th>
                                             <th style="text-align: center">Action</th>
                                         </tr>
                                     </thead>
                                     <tbody>
+                                        @foreach ($dataWilayah as $dw)
                                         <tr>
-                                            <th scope="row">1</th>
-                                            <td>Mark</td>
-                                            <td>Otto</td>
+                                            <th scope="row">{{$loop->iteration}}</th>
+                                            <td>{{ $dw->nama_koperasi }}</td>
                                             <td style="text-align: center">
                                                 <a href="/dashboard-admin"><img src="assets/images/info.png" alt="" width="30px"></a>
-                                                <a href="/dashboard-admin"><img src="assets/images/delete.png" alt="" width="30px" style="margin-left: 40px"></a>
+                                                <a href="{{ URL::to('/delete-koperasi') }}/{{ $dw->id_koperasi }}"><img src="assets/images/delete.png" alt="" width="30px" style="margin-left: 40px"></a>
                                             </td>
                                         </tr>
+                                        @endforeach
                                     </tbody>
                                 </table>
                             </div>
@@ -143,4 +151,24 @@
     </div>
 
 </div>
+<!-- Modal -->
+{{-- <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Konfirmasi Hapus</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Apakah yakin Koperasi dan UKM ini dihapus?
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Tidak</button>
+          <button type="button" class="btn btn-danger">Iya</button>
+        </div>
+      </div>
+    </div>
+  </div> --}}
 @endsection
