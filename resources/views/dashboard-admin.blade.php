@@ -46,7 +46,11 @@
         <div class="pcoded-navigation-label" data-i18n="nav.category.forms">Pengarsipan</div>
         <ul class="pcoded-item pcoded-left-item">
             <li>
+<<<<<<<<< Temporary merge branch 1
                 <a href="/arsip-pendirian" class="waves-effect waves-dark">
+=========
+                <a href="arsip-pendirian" class="waves-effect waves-dark">
+>>>>>>>>> Temporary merge branch 2
                     <span class="pcoded-micon"><i class="ti-layers"></i><b>FC</b></span>
                     <span class="pcoded-mtext" data-i18n="nav.form-components.main">Arsip Pendirian</span>
                     <span class="pcoded-mcaret"></span>

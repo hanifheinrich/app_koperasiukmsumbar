@@ -15,24 +15,50 @@ use app\Http\Controllers\AuthController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+Route::get('/','App\Http\Controllers\UserController@index')->middleware('guest');;
 Route::get('/login','App\Http\Controllers\AuthController@login')->name('login')->middleware('guest');
 Route::post('/login','App\Http\Controllers\AuthController@auth')->middleware('guest');;
 Route::get('/logout','App\Http\Controllers\AuthController@logout')->middleware('auth');
 
 Route::get('/dashboard-admin', 'App\Http\Controllers\AdminController@dashboard')->middleware('auth');
 Route::get('/profil', 'App\Http\Controllers\AdminController@profile')->middleware('auth');;
-Route::get('/master-data', 'App\Http\Controllers\AdminController@masterdata')->middleware('auth');;
-Route::get('/detail-master-data', 'App\Http\Controllers\AdminController@detailmasterdata')->middleware('auth');;
+Route::get('/master-data', 'App\Http\Controllers\AdminController@index')->middleware('auth');;
+Route::get('/detail-master-data/{id}', 'App\Http\Controllers\AdminController@show')->middleware('auth');;
 Route::get('/arsip-pendirian', 'App\Http\Controllers\AdminController@arsippendirian')->middleware('auth');;
 Route::get('/arsip-pad', 'App\Http\Controllers\AdminController@arsippad')->middleware('auth');;
+=========
+Route::get('/', function () {
+    return view('user.main');
+});
 
+Route::get('/login', function () {
+    return view('auth.login');
+});
+
+Route::get('/dashboard-admin', function () {
+    return view('dashboard-admin',[
+        "title" => "Dashboard Admin"
+    ]);
+});
+
+Route::get('/master-koperasi-ukm', function(){
+    return view('master-koperasi-ukm',[
+        "title" => "Koperasi & UKM"
+    ]);
+});
+
+Route::get('/arsip-pendirian', function () {
+    return view('arsip-pendirian',[
+        "title" => "Arsip Pendirian Koperasi & UKM"
+    ]);
+});
 
 Route::get('/arsip-pad', function () {
     return view('arsip-pad',[
         "title" => "Arsip Perubahan Anggaran Dasar Koperasi & UKM"
     ]);
 });
+>>>>>>>>> Temporary merge branch 2
 
 Route::get('/tambah-koperasi', function () {
     return view('tambah-koperasi',[
