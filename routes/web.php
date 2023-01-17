@@ -15,7 +15,7 @@ use app\Http\Controllers\AuthController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+Route::get('/','App\Http\Controllers\UserController@index')->middleware('guest');;
 Route::get('/login','App\Http\Controllers\AuthController@login')->name('login')->middleware('guest');
 Route::post('/login','App\Http\Controllers\AuthController@auth')->middleware('guest');;
 Route::get('/logout','App\Http\Controllers\AuthController@logout')->middleware('auth');
