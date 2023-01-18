@@ -80,7 +80,7 @@
                             </div>
                             <div class="card-block">
                                 
-                                <form method="GET" action="http://127.0.0.1:8000/dashboard-admin">
+                                <form method="GET" action="http://127.0.0.1:8000/detail-master-data">
                                     <div class="form-group row">
                                         <label class="col-sm-2 col-form-label">Nama</label>
                                         <div class="col-sm-10">
@@ -109,14 +109,15 @@
                                     </div>
                                     <div class="card-block">
                                         <!-- button Default -->
-                                        <button type="submit" class="btn waves-effect waves-light btn-style btn-green" style="float: right; margin-left:20px">Tambah</button>
-                                        <a href="arsip-pendirian"><button type="button" class="btn waves-effect waves-light btn-style btn-danger" style="float: right">Batal</button></a>
+                                        <button type="submit" class="btn waves-effect waves-light btn-style btn-green" style="float: right; margin-left:20px; bottom: 20px;">Tambah</button>
+                                        <a href="/detail-master-data"><button type="button" class="btn waves-effect waves-light btn-style btn-danger" style="float: right; bottom: 20px;">Batal</button></a>
                                     </div>
                                                     </form>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+                        </div>
                                     <!-- Basic Form Inputs card end -->
                     </div>
                 </div>

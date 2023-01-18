@@ -129,7 +129,7 @@
                         </div>
 
                     <div class="container">
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#contohModal">Edit Profil</button>
+                        <button type="button" class="btn btn-primary btn-style" data-toggle="modal" data-target="#contohModal">Edit Profil</button>
                         <div class="modal fade" id="contohModal" role="dialog" arialabelledby="modalLabel" aria-hidden="true">
                           <div class="modal-dialog" role="document">
                             <div class="modal-content">
@@ -166,7 +166,7 @@
                           </div>
                         </div>
 
-                        <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#modal">Edit Password</button>
+                        <button type="button" class="btn btn-secondary btn-style" data-toggle="modal" data-target="#modal">Edit Password</button>
                         <div class="modal fade" id="modal" role="dialog" arialabelledby="modalLabel" aria-hidden="true">
                           <div class="modal-dialog" role="document">
                             <div class="modal-content">
