@@ -92,22 +92,10 @@
                         <div class="card-header">
                             <div class="card-header-right">
                                 <div class="button-page">
-                                    <a href="/dashboard-admin"><button class="btn waves-effect waves-light btn-primary btn-block">
-                                        <span data-feather="plus"></span>
+                                    <a href="/dashboard-admin"><button  class="btn waves-effect waves-light btn-primary ">
                                         Tambah Koperasi
                                     </button></a>
                                 </div>
-                                {{-- <ul class="list-unstyled card-option">
-                                    <li>
-                                        <i class="fa fa fa-wrench open-card-option"></i>
-                                    </li>
-                                    <li>
-                                        <i class="fa fa-window-maximize full-card"></i>
-                                    </li>
-                                    <li><i class="fa fa-minus minimize-card"></i></li>
-                                    <li><i class="fa fa-refresh reload-card"></i></li>
-                                    <li><i class="fa fa-trash close-card"></i></li>
-                                </ul> --}}
                             </div>
                         </div>
                         <div class="card-block table-border-style">

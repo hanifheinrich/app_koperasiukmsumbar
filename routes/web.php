@@ -27,7 +27,7 @@ Route::get('/detail-master-data', 'App\Http\Controllers\AdminController@show')->
 Route::get('/arsip-pendirian', 'App\Http\Controllers\AdminController@arsippendirian')->middleware('auth');;
 Route::get('/arsip-pad', 'App\Http\Controllers\AdminController@arsippad')->middleware('auth');;
 
-Route::get('/delete-koperasi/{id_koperasi}', 'App\Http\Controllers\AdminController@destroy')->middleware('auth');;
+Route::delete('/delete-koperasi/{id_koperasi}', 'App\Http\Controllers\AdminController@destroy')->middleware('auth');;
 
 
 Route::get('/master-koperasi-ukm', function(){
