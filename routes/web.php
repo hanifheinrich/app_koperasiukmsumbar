@@ -28,12 +28,11 @@ Route::get('/arsip-pendirian', 'App\Http\Controllers\AdminController@arsippendir
 Route::get('/arsip-pad', 'App\Http\Controllers\AdminController@arsippad')->middleware('auth');;
 
 
-
-Route::get('/master-koperasi-ukm', function(){
-    return view('master-koperasi-ukm',[
-        "title" => "Koperasi & UKM"
-    ]);
-});
+// Route::get('/master-koperasi-ukm', function(){
+//     return view('master-koperasi-ukm',[
+//         "title" => "Koperasi & UKM"
+//     ]);
+// });
 
 Route::get('/arsip-pendirian', function () {
     return view('arsip-pendirian',[

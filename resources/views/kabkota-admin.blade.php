@@ -25,7 +25,7 @@
                 </a>
             </li>
             <li class="">
-              <a href="index.html" class="waves-effect waves-dark">
+              <a href="/profil" class="waves-effect waves-dark">
                   <span class="pcoded-micon"><i class="ti-home"></i><b>D</b></span>
                   <span class="pcoded-mtext" data-i18n="nav.dash.main">Profile</span>
                   <span class="pcoded-mcaret"></span>
@@ -35,7 +35,7 @@
         <div class="pcoded-navigation-label" data-i18n="nav.category.forms">Master Data</div>
         <ul class="pcoded-item pcoded-left-item">
             <li class="active">
-                <a href="form-elements-component.html" class="waves-effect waves-dark">
+                <a href="/detail-master-data" class="waves-effect waves-dark">
                     <span class="pcoded-micon"><i class="ti-layers"></i><b>FC</b></span>
                     <span class="pcoded-mtext" data-i18n="nav.form-components.main">Koperasi & UKM</span>
                     <span class="pcoded-mcaret"></span>
@@ -46,14 +46,14 @@
         <div class="pcoded-navigation-label" data-i18n="nav.category.forms">Pengarsipan</div>
         <ul class="pcoded-item pcoded-left-item">
             <li>
-                <a href="chart.html" class="waves-effect waves-dark">
+                <a href="/arsip-pendirian" class="waves-effect waves-dark">
                     <span class="pcoded-micon"><i class="ti-layers"></i><b>FC</b></span>
                     <span class="pcoded-mtext" data-i18n="nav.form-components.main">Arsip Pendirian</span>
                     <span class="pcoded-mcaret"></span>
                 </a>
             </li>
             <li>
-                <a href="map-google.html" class="waves-effect waves-dark">
+                <a href="/arsip-pad" class="waves-effect waves-dark">
                     <span class="pcoded-micon"><i class="ti-layers"></i><b>FC</b></span>
                     <span class="pcoded-mtext" data-i18n="nav.form-components.main">Arsip PAD</span>
                     <span class="pcoded-mcaret"></span>
@@ -89,7 +89,7 @@
                 <div class="page-body">
                 <!-- Hover table card start -->
                     <div class="card">
-                        
+                        <div class="card-header">
                                 {{-- <ul class="list-unstyled card-option">
                                     <li>
                                         <i class="fa fa fa-wrench open-card-option"></i>
@@ -101,38 +101,39 @@
                                     <li><i class="fa fa-refresh reload-card"></i></li>
                                     <li><i class="fa fa-trash close-card"></i></li>
                                 </ul> --}}
-                        <div class="card-block table-border-style">
-                            <div class="table-responsive">
-                                <table class="table table-hover" id="example">
-                                            <div class="page-header-breadcrumb">
-                                                <ul>
-                                                    <a href="/tambah-koperasi"><button class="btn btn-tambah-size waves-effect waves-light btn-primary" style="float: right; margin-left:20px">
-                                                        <li class="breadcrumb-item">
-                                                            <i class="icofont icofont-plus"></i>
-                                                    </li>
-                                                    Tambah Koperasi</button></a>
-                                                </ul>
-                                            </div>
-                                    <thead>
-                                        <tr>
-                                            <th>No</th>
-                                            <th>Nama Koperasi dan UKM</th>
-                                            <th style="text-align: center">Action</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        @foreach ($Wilayah as $dw)
-                                        <tr>
-                                            <th scope="row">{{$loop->iteration}}</th>
-                                            <td>{{ $dw->nama_koperasi }}</td>
-                                            <td style="text-align: center">
-                                                <a href="/detail-koperasi"><img src="assets/images/info.png" alt="" width="30px"></a>
-                                                <a href="/dashboard-admin"><img src="assets/images/delete.png" alt="" width="30px" style="margin-left: 40px"></a>
-                                            </td>
-                                        </tr>
-                                        @endforeach
-                                    </tbody>
-                                </table>
+                            <div class="card-block table-border-style">
+                                <div class="table-responsive">
+                                    <table class="table table-hover" id="example">
+                                                <div class="page-header-breadcrumb">
+                                                    <ul>
+                                                        <a href="/tambah-koperasi"><button class="btn btn-tambah-size waves-effect waves-light btn-primary" style="float: right; margin-left:20px">
+                                                            <li class="breadcrumb-item">
+                                                                <i class="icofont icofont-plus"></i>
+                                                        </li>
+                                                        Tambah Koperasi</button></a>
+                                                    </ul>
+                                                </div>
+                                        <thead>
+                                            <tr>
+                                                <th>No</th>
+                                                <th>Nama Koperasi dan UKM</th>
+                                                <th style="text-align: center">Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            @foreach ($Wilayah as $dw)
+                                            <tr>
+                                                <th scope="row">{{$loop->iteration}}</th>
+                                                <td>{{ $dw->nama_koperasi }}</td>
+                                                <td style="text-align: center">
+                                                    <a href="/detail-koperasi"><img src="assets/images/info.png" alt="" width="30px"></a>
+                                                    <a href="/dashboard-admin"><img src="assets/images/delete.png" alt="" width="30px" style="margin-left: 40px"></a>
+                                                </td>
+                                            </tr>
+                                            @endforeach
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
                         </div>
                     </div>

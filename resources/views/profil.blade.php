@@ -71,7 +71,7 @@
     <div class="page-header">
         <div class="page-block">
             <div class="row align-items-center">
-                <div class="col-md-11">
+                <div class="col-md-10">
                     <div class="page-header-title">
                         <h2 class="m-b-10">Profil</h2>
                         <br>
@@ -101,111 +101,113 @@
                             </ol>
                         </div>
                       </div>
-
-                      <div class="row gx-5" style="margin-top: 20px;">
-                      <form action="">
-                        <div class="form-group row">
-                            <label class="col-sm-2 col-form-label">Email:</label>
-                            <div class="col-sm-10">
-                                <input type="text" class="form-control"
-                                placeholder="diskop@sumbarprov.go.id" readonly>
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <label class="col-sm-2 col-form-label">Alamat:</label>
-                            <div class="col-sm-10">
-                                <input type="text" class="form-control"
-                                placeholder="Jl. Khatib Sulaiman No. 11 Padang" readonly>
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <label class="col-sm-2 col-form-label">No Telepon:</label>
-                            <div class="col-sm-10">
-                                <input type="text" class="form-control"
-                                placeholder="0751 - 7055292" readonly>
-                            </div>
-                        </div>
-
-                    <div class="container">
-                        <button type="button" class="btn btn-primary btn-style" data-toggle="modal" data-target="#contohModal">Edit Profil</button>
-                        <div class="modal fade" id="contohModal" role="dialog" arialabelledby="modalLabel" aria-hidden="true">
-                          <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                  <h4 class="modal-title">Edit Profil</h4>
-                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">  
-                                    <span aria-hidden="true">&times;</span>
-                                  </button>
-                                </div>
-
-                                <div class="modal-body">
-                                    <form>
-                                        <div class="form-group">
-                                            <label>Email</label>
-                                            <input type="email" name="" class="form-control">
-                                        </div>
-
-                                        <div class="form-group">
-                                            <label>Alamat</label>
-                                            <input type="text" name="" class="form-control">
-                                        </div>
-
-                                        <div class="form-group">
-                                            <label>Nomor Telepon</label>
-                                            <input type="notelepon" name="" class="form-control">
-                                        </div>
-                                    </form>
-                                </div>
-
-                                <div class="modal-footer">
-                                    <button type="submit" class="btn btn-primary">SIMPAN</button>
-                                </div>
-                            </div>
-                          </div>
-                        </div>
-
-                        <button type="button" class="btn btn-secondary btn-style" data-toggle="modal" data-target="#modal">Edit Password</button>
-                        <div class="modal fade" id="modal" role="dialog" arialabelledby="modalLabel" aria-hidden="true">
-                          <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                  <h4 class="modal-title">Edit Password</h4>
-                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">  
-                                    <span aria-hidden="true">&times;</span>
-                                  </button>
-                                </div>
-                                  <div class="modal-body">
-                                    <form>
-                                        <div class="form-group">
-                                            <label>Masukkan Password Baru</label>
-                                            <input type="email" name="" class="form-control">
-                                        </div>
-
-                                        <div class="form-group">
-                                            <label>Konfirmasi Password Baru</label>
-                                            <input type="text" name="" class="form-control">
-                                        </div>
-                                    </form>
-                                </div>
-
-                                <div class="modal-footer">
-                                    <button type="submit" class="btn btn-primary">SIMPAN</button>
-                                </div>
-                            </div>
-                          </div>
-                        </div>
                     </div>
-                        
-                      </form>
-                      </div>
-                    </div>
-
-
-
                 </div>
-            </div>
+
+                <div class="col-md-12">
+                    <div class="row">
+                        <form action="">
+                                <div class="card-block">
+                                    <div class="container">
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">Email:</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control"
+                                            placeholder="diskop@sumbarprov.go.id" readonly>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">Alamat:</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control"
+                                            placeholder="Jl. Khatib Sulaiman No. 11 Padang" readonly>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">No Telepon:</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control"
+                                            placeholder="0751 - 7055292" readonly>
+                                        </div>
+                                    </div>
+                                    </div>
+
+                                <div class="container">
+                                    <button type="button" class="btn btn-primary btn-style" data-toggle="modal" data-target="#contohModal">Edit Profil</button>
+                                    <div class="modal fade" id="contohModal" role="dialog" arialabelledby="modalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                            <h4 class="modal-title">Edit Profil</h4>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">  
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                            </div>
+
+                                            <div class="modal-body">
+                                                <form>
+                                                    <div class="form-group">
+                                                        <label>Email</label>
+                                                        <input type="email" name="" class="form-control">
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <label>Alamat</label>
+                                                        <input type="text" name="" class="form-control">
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <label>Nomor Telepon</label>
+                                                        <input type="notelepon" name="" class="form-control">
+                                                    </div>
+                                                </form>
+                                            </div>
+
+                                            <div class="modal-footer">
+                                                <button type="submit" class="btn btn-primary">SIMPAN</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+
+                                    <button type="button" class="btn btn-secondary btn-style" data-toggle="modal" data-target="#modal">Edit Password</button>
+                                    <div class="modal fade" id="modal" role="dialog" arialabelledby="modalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                            <h4 class="modal-title">Edit Password</h4>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">  
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form>
+                                                    <div class="form-group">
+                                                        <label>Masukkan Password Baru</label>
+                                                        <input type="email" name="" class="form-control">
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <label>Konfirmasi Password Baru</label>
+                                                        <input type="text" name="" class="form-control">
+                                                    </div>
+                                                </form>
+                                            </div>
+
+                                            <div class="modal-footer">
+                                                <button type="submit" class="btn btn-primary">SIMPAN</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>     
         </div>
     </div>
     <!-- Page-header end -->

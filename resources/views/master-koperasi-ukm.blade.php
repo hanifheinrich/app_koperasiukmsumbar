@@ -123,11 +123,11 @@
                                     </tr>
                                   </thead>
                                   <tbody>
-                                    @foreach ($dataWilayah as $dw)
+                                    @foreach ($Kabkota as $kk)
                                     <tr>
                                       <td scope="row">{{$loop->iteration}}</td>
-                                      <td>{{ $dw->Jenis }} {{ $dw->Nama }}</td>
-                                      <td><a href="/detail-master-data/{{ $dw ->ID }}">Detail</a></td>
+                                      <td>{{ $kk->Jenis }} {{ $kk->Nama }}</td>
+                                      <td><a href="/detail-master-data/{{ $kk ->ID }}">Detail</a></td>
                                     </tr>
                                     @endforeach
                                   </tbody>

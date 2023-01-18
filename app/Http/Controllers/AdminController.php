@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use App\Models\Wilayah;
+use App\Models\Kabkota;
 use Illuminate\Http\Request;
 
 class Admincontroller extends Controller
@@ -22,10 +23,10 @@ class Admincontroller extends Controller
 
   public function index()
   {
-    $wilayah = Wilayah::get();
+    $kabkota = Kabkota::all();
     return view('master-koperasi-ukm',[
         "title" => "Koperasi & UKM",
-        'Wilayah' => $wilayah
+        'Kabkota' => $kabkota
       ]);
   }
 
