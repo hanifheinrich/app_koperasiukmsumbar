@@ -72,7 +72,7 @@
           <div class="row align-items-center">
               <div class="col-md-8">
                   <div class="page-header-title">
-                      <h5 class="m-b-10">Arsip Perubahan Anggaran Dasar</h5>
+                      <h5 class="m-b-10">Arsip Perubahan Anggaran Dasar Koperasi dan UKM</h5>
                       <p class="m-b-0">Temukan file arsip perubahan anggaran dasar secara cepat disini</p>
                   </div>
               </div>
@@ -91,18 +91,27 @@
   <!-- Page-header end -->
 <div class="pcoded-inner-content">
   <!-- Main-body start -->
-<!-- Basic table card start -->
-                      <div class="card">
-                        <div class="card-header">
-                          <h5>Arsip PAD Koperasi dan UKM</h5>
-                          <br><br>
-                          <table id="table" 
-                          data-toggle="table"
-                          data-search="true"
-                          {{-- data-filter-control="true"  --}}
-                          {{-- data-show-export="true" --}}
-                          data-click-to-select="true"
-                          data-toolbar="#toolbar">
+                        <!-- Hover table card start -->
+                        <div class="card">
+                            <div class="card-header">
+                              <h5>Tabel Arsip Pendirian</h5>
+                              <div class="card-header-right">
+                                <ul class="list-unstyled card-option">
+                                  <li>
+                                    <i class="fa fa fa-wrench open-card-option"></i>
+                                  </li>
+                                  <li>
+                                    <i class="fa fa-window-maximize full-card"></i>
+                                  </li>
+                                  <li><i class="fa fa-minus minimize-card"></i></li>
+                                  <li><i class="fa fa-refresh reload-card"></i></li>
+                                  <li><i class="fa fa-trash close-card"></i></li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="card-block table-border-style">
+                              <div class="table-responsive">
+                          <table id="example" class="table table-hover">
 
     <thead>
       <tr>
@@ -118,7 +127,7 @@
         <td>Koperasi Solidarity Infinity</td>
         <td>Kota Padang</td>
         <td>
-          <a href="/dashboard-admin"><img src="assets/images/info.png" alt="" width="30px">Lihat!</a>
+          <a href="/detail-pad"><img src="assets/images/info.png" alt="" width="30px">Lihat</a>
       </td>
       </tr>
       <tr>
@@ -126,7 +135,7 @@
         <td>Koperasi Sejahtera Makmur</td>
         <td>Kabupaten Pasaman Barat</td>
         <td>
-          <a href="/dashboard-admin"><img src="assets/images/info.png" alt="" width="30px">Lihat!</a>
+          <a href="/detail-pad"><img src="assets/images/info.png" alt="" width="30px">Lihat</a>
       </td>
       </tr>
       <tr>
@@ -134,7 +143,7 @@
         <td>Koperasi Papa Mama</td>
         <td>Kota Solok</td>
         <td>
-          <a href="/dashboard-admin"><img src="assets/images/info.png" alt="" width="30px">Lihat!</a>
+          <a href="/detail-pad"><img src="assets/images/info.png" alt="" width="30px">Lihat</a>
       </td>
       </tr>
       <tr>
@@ -142,7 +151,7 @@
         <td>Koperasi Friendzone</td>
         <td>Kota Payakumbuh</td>
         <td>
-          <a href="/dashboard-admin"><img src="assets/images/info.png" alt="" width="30px">Lihat!</a>
+          <a href="/detail-pad"><img src="assets/images/info.png" alt="" width="30px">Lihat</a>
       </td>
       </tr>
       <tr>
@@ -150,7 +159,7 @@
         <td>Koperasi Menua Bersama</td>
         <td>Kabupaten Pesisir Selatan</td>
         <td>
-          <a href="/dashboard-admin"><img src="assets/images/info.png" alt="" width="30px">Lihat!</a>
+          <a href="/detail-pad"><img src="assets/images/info.png" alt="" width="30px">Lihat</a>
       </td>
       </tr>
   </tbody>

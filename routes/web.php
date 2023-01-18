@@ -84,3 +84,9 @@ Route::get('/profil', function () {
         "title" => "Profil Admin"
     ]);
 });
+
+Route::get('/detail-pad', function () {
+    return view('detail-pad',[
+        "title" => "File PAD"
+    ]);
+});
