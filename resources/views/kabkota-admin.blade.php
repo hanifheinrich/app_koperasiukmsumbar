@@ -89,15 +89,6 @@
                 <div class="page-body">
                 <!-- Hover table card start -->
                     <div class="card">
-                        <div class="card-header">
-                            <div class="card-header-right">
-                                <div class="button-page">
-                                    <a href="/dashboard-admin"><button  class="btn waves-effect waves-light btn-primary ">
-                                        Tambah Koperasi
-                                    </button></a>
-                                </div>
-                            </div>
-                        </div>
                         <div class="card-block table-border-style">
                             <div class="table-responsive">
                                 <table class="table table-hover" id="example">
