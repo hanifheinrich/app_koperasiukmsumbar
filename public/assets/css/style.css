@@ -190,8 +190,8 @@ strong {
     border-bottom: none;
     padding: 20px;
     position: relative;
-    -webkit-box-shadow: 0px 1px 20px 0px rgba(69, 90, 100, 0.08);
-    box-shadow: 0px 1px 20px 0px rgba(69, 90, 100, 0.08);
+    -webkit-box-shadow: 0px 0px 0px 0px rgba(69, 90, 100, 0.08);
+    box-shadow: 0px 0px 0px 0px rgba(69, 90, 100, 0.08);
 }
 .card .card-header .card-header-left {
     display: inline-block;

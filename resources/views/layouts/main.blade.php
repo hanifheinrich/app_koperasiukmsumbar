@@ -33,6 +33,9 @@
     <!-- ico font -->
     <link rel="stylesheet" type="text/css" href="assets/icon/icofont/css/icofont.css">
 
+    <!-- Datatables-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.13.1/datatables.min.css"/>
+
   </head>
 
   <body>
@@ -203,7 +206,15 @@
     <script type="text/javascript" src="assets/pages/icon-modal.js"></script>
 
     <script src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
-    
+
+    <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.13.1/datatables.min.js"></script>
+    {{-- <script>
+        $(document).ready( function () {
+            $('#myTable').DataTable();
+        } );
+    </script> --}}
+    @yield('scripts')
+
 </body>
 
 </html>

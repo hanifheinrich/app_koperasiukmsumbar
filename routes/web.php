@@ -27,7 +27,7 @@ Route::get('/detail-master-data', 'App\Http\Controllers\AdminController@detailma
 Route::get('/arsip-pendirian', 'App\Http\Controllers\AdminController@arsippendirian')->middleware('auth');;
 Route::get('/arsip-pad', 'App\Http\Controllers\AdminController@arsippad')->middleware('auth');;
 
-Route::get('/delete-koperasi/{id_koperasi}', 'App\Http\Controllers\AdminController@destroy')->middleware('auth');;
+Route::delete('/delete-koperasi/{id_koperasi}', 'App\Http\Controllers\AdminController@destroy')->middleware('auth');;
 
 Route::get('/arsip-pad', function () {
     return view('arsip-pad',[

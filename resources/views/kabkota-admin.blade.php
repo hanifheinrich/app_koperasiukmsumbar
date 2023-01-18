@@ -112,6 +112,7 @@
                         </div>
                         <div class="card-block table-border-style">
                             <div class="table-responsive">
+                                <br/>
                                 @if(session()->has('success'))
                                     {{ session()->get('success') }}
                                 @endif
@@ -135,12 +136,14 @@
                                             <td>{{ $dw->nama_koperasi }}</td>
                                             <td style="text-align: center">
                                                 <a href="/dashboard-admin"><img src="assets/images/info.png" alt="" width="30px"></a>
-                                                <a href="{{ URL::to('/delete-koperasi') }}/{{ $dw->id_koperasi }}"><img src="assets/images/delete.png" alt="" width="30px" style="margin-left: 40px"></a>
+                                                <a onclick="handleDelete()"><img src="assets/images/delete.png" alt="" width="30px" style="margin-left: 40px"></a>
+                                                {{-- <a href="{{ URL::to('/delete-koperasi') }}/{{ $dw->id_koperasi }}"><img src="assets/images/delete.png" alt="" width="30px" style="margin-left: 40px"></a> --}}
                                             </td>
                                         </tr>
                                         @endforeach
                                     </tbody>
                                 </table>
+
                             </div>
                         </div>
                     </div>
@@ -152,7 +155,7 @@
 
 </div>
 <!-- Modal -->
-{{-- <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+<div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -165,10 +168,23 @@
           Apakah yakin Koperasi dan UKM ini dihapus?
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Tidak</button>
-          <button type="button" class="btn btn-danger">Iya</button>
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Tidak</button>
+          <form style="display: inline-block" action="/delete-koperasi/{{ $dw->id_koperasi }}" method="post">
+            @csrf
+            @method('delete')
+            <button type="submit" class="btn btn-danger">Iya</button>
+          </form>
         </div>
       </div>
     </div>
-  </div> --}}
+  </div>
+@endsection
+
+@section('scripts')
+<script>
+    function handleDelete(id)
+    {
+        $('#deleteModal').modal('show')
+    }
+</script>
 @endsection
