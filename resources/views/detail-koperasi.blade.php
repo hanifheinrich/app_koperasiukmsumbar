@@ -101,15 +101,41 @@
                         </div>
                     </div>
                     <h4>File PAD</h4>
-                    <div class="card card-style">
-                        <div class="card-header">
-                            <a href="#">
-                                <img id="pop-up-tambah-PAD" class="card-header-right" src="assets/images/tambah.png" width="30dp">
-                            </a>
-                            <p class="text-underline"><a href="assets/images/pdf.png">nama_file_pad_2020.pdf</a></p>
-                            <p class="text-underline"><a href="assets/images/pdf.png">nama_file_pad_2021.pdf</a></p>
-                            <p class="text-underline"><a href="assets/images/pdf.png">nama_file_pad_2022.pdf</a></p>
-                        </div>
+                    <div class="card">
+                            <div class="card-block table-border-style">
+                                <div class="table-responsive">
+                                  <table id="example" class="table table-hover">
+                                    <a href="#">
+                                        <img id="pop-up-tambah-PAD" class="card-header-right" src="assets/images/tambah.png" width="30dp" style="float: right; margin-left:20px">
+                                    </a>
+                                    <thead>
+                                      <tr>
+                                        <th>No</th>
+                                        <th>Nama File PAD</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <th scope="row">1</th>
+                                        <td>PAD_Koperasi Solidarity_2019</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">2</th>
+                                        <td>PAD_Koperasi Solidarity_2020</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">3</th>
+                                        <td>PAD_Koperasi Solidarity_2021</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">4</th>
+                                        <td>PAD_Koperasi Solidarity_2022</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </div>
+                              </div>
+                     
                     </div>
                     <!-- Card end -->
                 </div>

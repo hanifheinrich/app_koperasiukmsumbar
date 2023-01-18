@@ -55,7 +55,11 @@
                 </a>
             </li>
             <li class="active">
+<<<<<<<<< Temporary merge branch 1
                 <a href="/arsip-pad" class="waves-effect waves-dark">
+=========
+                <a href="arsip-pad" class="waves-effect waves-dark">
+>>>>>>>>> Temporary merge branch 2
                     <span class="pcoded-micon"><i class="ti-layers"></i><b>FC</b></span>
                     <span class="pcoded-mtext" data-i18n="nav.form-components.main">Arsip PAD</span>
                     <span class="pcoded-mcaret"></span>

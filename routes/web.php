@@ -80,21 +80,8 @@ Route::get('/koperasi', function () {
     ]);
 });
 
-
-Route::get('/detail-pendirian', function () {
-    return view('user.detail-pendirian',[
-        "title" => "Sistem Informasi Arsip Berkas Dinas Koperasi dan UKM"
-    ]);
-});
-
-Route::get('/daftar-PAD', function () {
-    return view('user.daftar-PAD',[
-        "title" => "Sistem Informasi Arsip Berkas Dinas Koperasi dan UKM"
-    ]);
-});
-
-Route::get('/detail-pad', function () {
-    return view('user.detail-pad',[
-        "title" => "Sistem Informasi Arsip Berkas Dinas Koperasi dan UKM"
+Route::get('/profil', function () {
+    return view('profil',[
+        "title" => "Profil Admin"
     ]);
 });

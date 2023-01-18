@@ -25,7 +25,7 @@
                 </a>
             </li>
             <li class="">
-              <a href="/profil" class="waves-effect waves-dark">
+              <a href="index.html" class="waves-effect waves-dark">
                   <span class="pcoded-micon"><i class="ti-home"></i><b>D</b></span>
                   <span class="pcoded-mtext" data-i18n="nav.dash.main">Profile</span>
                   <span class="pcoded-mcaret"></span>
@@ -35,7 +35,7 @@
         <div class="pcoded-navigation-label" data-i18n="nav.category.forms">Master Data</div>
         <ul class="pcoded-item pcoded-left-item">
             <li class="active">
-                <a href="/detail-master-data" class="waves-effect waves-dark">
+                <a href="form-elements-component.html" class="waves-effect waves-dark">
                     <span class="pcoded-micon"><i class="ti-layers"></i><b>FC</b></span>
                     <span class="pcoded-mtext" data-i18n="nav.form-components.main">Koperasi & UKM</span>
                     <span class="pcoded-mcaret"></span>
@@ -46,14 +46,14 @@
         <div class="pcoded-navigation-label" data-i18n="nav.category.forms">Pengarsipan</div>
         <ul class="pcoded-item pcoded-left-item">
             <li>
-                <a href="/arsip-pendirian" class="waves-effect waves-dark">
+                <a href="chart.html" class="waves-effect waves-dark">
                     <span class="pcoded-micon"><i class="ti-layers"></i><b>FC</b></span>
                     <span class="pcoded-mtext" data-i18n="nav.form-components.main">Arsip Pendirian</span>
                     <span class="pcoded-mcaret"></span>
                 </a>
             </li>
             <li>
-                <a href="/arsip-pad" class="waves-effect waves-dark">
+                <a href="map-google.html" class="waves-effect waves-dark">
                     <span class="pcoded-micon"><i class="ti-layers"></i><b>FC</b></span>
                     <span class="pcoded-mtext" data-i18n="nav.form-components.main">Arsip PAD</span>
                     <span class="pcoded-mcaret"></span>
@@ -100,15 +100,16 @@
                         </div>
                         <div class="card-block table-border-style">
                             <div class="table-responsive">
-                                @if(session()->has('success'))
-                                    {{ session()->get('success') }}
-                                @endif
- 
-                                @if(session()->has('failed'))
-                                    {{ session()->get('failed') }}
-                                @endif
-
                                 <table class="table table-hover" id="example">
+                                            <div class="page-header-breadcrumb">
+                                                <ul>
+                                                    <a href="/tambah-koperasi"><button class="btn btn-tambah-size waves-effect waves-light btn-primary" style="float: right; margin-left:20px">
+                                                        <li class="breadcrumb-item">
+                                                            <i class="icofont icofont-plus"></i>
+                                                    </li>
+                                                    Tambah Koperasi</button></a>
+                                                </ul>
+                                            </div>
                                     <thead>
                                         <tr>
                                             <th>No</th>
@@ -122,8 +123,8 @@
                                             <th scope="row">{{$loop->iteration}}</th>
                                             <td>{{ $dw->nama_koperasi }}</td>
                                             <td style="text-align: center">
-                                                <a href="/dashboard-admin"><img src="assets/images/info.png" alt="" width="30px"></a>
-                                                <a href="{{ URL::to('/delete-koperasi') }}/{{ $dw->id_koperasi }}"><img src="assets/images/delete.png" alt="" width="30px" style="margin-left: 40px"></a>
+                                                <a href="/detail-koperasi"><img src="assets/images/info.png" alt="" width="30px"></a>
+                                                <a href="/dashboard-admin"><img src="assets/images/delete.png" alt="" width="30px" style="margin-left: 40px"></a>
                                             </td>
                                         </tr>
                                         @endforeach
@@ -139,24 +140,4 @@
     </div>
 
 </div>
-<!-- Modal -->
-{{-- <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLongTitle">Konfirmasi Hapus</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          Apakah yakin Koperasi dan UKM ini dihapus?
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Tidak</button>
-          <button type="button" class="btn btn-danger">Iya</button>
-        </div>
-      </div>
-    </div>
-  </div> --}}
 @endsection
