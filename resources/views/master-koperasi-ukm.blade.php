@@ -35,7 +35,7 @@
         <div class="pcoded-navigation-label" data-i18n="nav.category.forms">Master Data</div>
         <ul class="pcoded-item pcoded-left-item">
             <li class="active">
-                <a href="/master-data" class="waves-effect waves-dark">
+                <a href="/master-koperasi-ukm" class="waves-effect waves-dark">
                     <span class="pcoded-micon"><i class="ti-layers"></i><b>FC</b></span>
                     <span class="pcoded-mtext" data-i18n="nav.form-components.main">Koperasi & UKM</span>
                     <span class="pcoded-mcaret"></span>
@@ -114,7 +114,7 @@
                             </div> 
                             <div class="card-block table-border-style">
                               <div class="table-responsive">
-                                <table class="table table-hover">
+                                <table class="table table-hover" id="myTable">
                                   <thead>
                                     <tr>
                                       <th>No</th>
@@ -125,9 +125,9 @@
                                   <tbody>
                                     @foreach ($dataWilayah as $dw)
                                     <tr>
-                                      <th scope="row">{{$loop->iteration}}</th>
+                                      <td scope="row">{{$loop->iteration}}</td>
                                       <td>{{ $dw->Jenis }} {{ $dw->Nama }}</td>
-                                      <td>@mdo</td>
+                                      <td><a href="/detail-master-data/{{ $dw ->ID }}">Detail</a></td>
                                     </tr>
                                     @endforeach
                                   </tbody>

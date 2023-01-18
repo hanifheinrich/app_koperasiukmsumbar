@@ -20,21 +20,21 @@ class Admincontroller extends Controller
       ]);
   }
 
-  public function masterdata()
+  public function index()
   {
-    $wilayah = Wilayah::all();
+    $wilayah = Wilayah::get();
     return view('master-koperasi-ukm',[
         "title" => "Koperasi & UKM",
-        'dataWilayah' => $wilayah
+        'Wilayah' => $wilayah
       ]);
   }
 
-  public function detailmasterdata()
+  public function show()
   {
     $wilayah = Wilayah::all();
     return view('kabkota-admin',[
         "title" => "Koperasi & UKM",
-        'dataWilayah' => $wilayah
+        'Wilayah' => $wilayah
       ]);
   }
 

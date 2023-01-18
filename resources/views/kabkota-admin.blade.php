@@ -89,14 +89,7 @@
                 <div class="page-body">
                 <!-- Hover table card start -->
                     <div class="card">
-                        <div class="card-header">
-                            <div class="card-header-right">
-                                <div class="button-page">
-                                    <a href="/dashboard-admin"><button class="btn waves-effect waves-light btn-primary btn-block">
-                                        <span data-feather="plus"></span>
-                                        Tambah Koperasi
-                                    </button></a>
-                                </div>
+                        
                                 {{-- <ul class="list-unstyled card-option">
                                     <li>
                                         <i class="fa fa fa-wrench open-card-option"></i>
@@ -108,11 +101,18 @@
                                     <li><i class="fa fa-refresh reload-card"></i></li>
                                     <li><i class="fa fa-trash close-card"></i></li>
                                 </ul> --}}
-                            </div>
-                        </div>
                         <div class="card-block table-border-style">
                             <div class="table-responsive">
                                 <table class="table table-hover" id="example">
+                                            <div class="page-header-breadcrumb">
+                                                <ul>
+                                                    <a href="/tambah-koperasi"><button class="btn btn-tambah-size waves-effect waves-light btn-primary" style="float: right; margin-left:20px">
+                                                        <li class="breadcrumb-item">
+                                                            <i class="icofont icofont-plus"></i>
+                                                    </li>
+                                                    Tambah Koperasi</button></a>
+                                                </ul>
+                                            </div>
                                     <thead>
                                         <tr>
                                             <th>No</th>
@@ -121,12 +121,12 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        @foreach ($dataWilayah as $dw)
+                                        @foreach ($Wilayah as $dw)
                                         <tr>
                                             <th scope="row">{{$loop->iteration}}</th>
                                             <td>{{ $dw->nama_koperasi }}</td>
                                             <td style="text-align: center">
-                                                <a href="/dashboard-admin"><img src="assets/images/info.png" alt="" width="30px"></a>
+                                                <a href="/detail-koperasi"><img src="assets/images/info.png" alt="" width="30px"></a>
                                                 <a href="/dashboard-admin"><img src="assets/images/delete.png" alt="" width="30px" style="margin-left: 40px"></a>
                                             </td>
                                         </tr>

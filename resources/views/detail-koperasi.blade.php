@@ -79,7 +79,7 @@
                             <div class="breadcrumb-header">
                                 <h4>Koperasi Solidarity Infinity</h4>
                                 <a href="#">
-                                    <img id="detail" class="card-header-right" src="assets/images/edit.png" width="30dp">
+                                    <img id="pop-up-edit" class="card-header-right" src="assets/images/edit.png" width="30dp">
                                 </a>
                                 <h6><b>Kota Padang</b></h6>
                             </div>
@@ -101,15 +101,41 @@
                         </div>
                     </div>
                     <h4>File PAD</h4>
-                    <div class="card card-style">
-                        <div class="card-header">
-                            <a href="#">
-                                <img class="card-header-right" src="assets/images/tambah.png" width="30dp">
-                            </a>
-                            <p class="text-underline"><a href="assets/images/pdf.png">nama_file_pad_2020.pdf</a></p>
-                            <p class="text-underline"><a href="assets/images/pdf.png">nama_file_pad_2021.pdf</a></p>
-                            <p class="text-underline"><a href="assets/images/pdf.png">nama_file_pad_2022.pdf</a></p>
-                        </div>
+                    <div class="card">
+                            <div class="card-block table-border-style">
+                                <div class="table-responsive">
+                                  <table id="example" class="table table-hover">
+                                    <a href="#">
+                                        <img id="pop-up-tambah-PAD" class="card-header-right" src="assets/images/tambah.png" width="30dp" style="float: right; margin-left:20px">
+                                    </a>
+                                    <thead>
+                                      <tr>
+                                        <th>No</th>
+                                        <th>Nama File PAD</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <th scope="row">1</th>
+                                        <td>PAD_Koperasi Solidarity_2019</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">2</th>
+                                        <td>PAD_Koperasi Solidarity_2020</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">3</th>
+                                        <td>PAD_Koperasi Solidarity_2021</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">4</th>
+                                        <td>PAD_Koperasi Solidarity_2022</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </div>
+                              </div>
+                     
                     </div>
                     <!-- Card end -->
                 </div>
@@ -121,6 +147,7 @@
 </div>
 
 <!-- Modal start -->
+<!-- Pop-Up Edit Koperasi Start -->
 <div class="modal fade modal-icon" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -131,18 +158,16 @@
                 </button>
             </div>
             <div class="modal-body">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="form-group">
-                            Nama Koperasi dan UKM
-                            <input class="form-control" type="text" id="nama" value="Koperasi Solidarity Infinity">
-                        </div>
-                        <div class="form-group">
-                            Alamat
-                            <input class="form-control" type="text" id="alamat" value='Jl. Andam Dewi, Kubu Marapalam, Kec. Padang Tim'>
-                        </div>
+                <form>
+                    <div class="form-group">
+                        Nama Koperasi dan UKM
+                        <input class="form-control" type="text" id="nama" value="Koperasi Solidarity Infinity">
                     </div>
-                </div>
+                    <div class="form-group">
+                        Alamat
+                        <input class="form-control" type="text" id="alamat" value='Jl. Andam Dewi, Kubu Marapalam, Kec. Padang Tim'>
+                    </div>
+                </form>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-primary btn-style" data-dismiss="modal">Simpan</button>
@@ -150,6 +175,33 @@
         </div>
     </div>
 </div>
+<!-- Pop-Up Edit Koperasi End -->
+
+<!-- Pop-Up Tambah PAD Start -->
+<div class="modal fade modal-tambah-pad" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel">Tambah File PAD</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        Unggah File PAD
+                        <input type="file" class="form-control">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary btn-style" data-dismiss="modal">Tambah</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Pop-Up Tambah PAD End -->
 <!-- Modal end -->
     
 @endsection
