@@ -108,22 +108,22 @@
                                         </div>
                                     </div>
                                     <div class="card-block">
-                                        <!-- button Default -->
-                                        <button type="submit" class="btn waves-effect waves-light btn-style btn-green" style="float: right; margin-left:20px">Tambah</button>
-                                        <a href="arsip-pendirian"><button type="button" class="btn waves-effect waves-light btn-style btn-danger" style="float: right">Batal</button></a>
-                                    </div>
-                                                    </form>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Basic Form Inputs card end -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+                                       <!-- button Default -->
+                                       <button type="submit" class="btn waves-effect waves-light btn-style btn-green" style="float: right; margin-left:20px">Tambah</button>
+                                       <a href="arsip-pendirian"><button type="button" class="btn waves-effect waves-light btn-style btn-danger" style="float: right">Batal</button></a>
+                                   </div>
+                                                   </form>
+                                               </div>
+                                           </div>
+                                       </div>
+                                   </div>
+                                   <!-- Basic Form Inputs card end -->
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div>
 </div>
 </div>
-    
+   
 @endsection

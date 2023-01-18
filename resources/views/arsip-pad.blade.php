@@ -125,7 +125,7 @@
         <td>Koperasi Solidarity Infinity</td>
         <td>Kota Padang</td>
         <td>
-          <a href="/dashboard-admin"><img src="assets/images/pdf.png" alt="" width="30px">Lihat!</a>
+          <a href="/dashboard-admin"><img src="assets/images/info.png" alt="" width="30px">Lihat!</a>
       </td>
       </tr>
       <tr>
@@ -133,7 +133,7 @@
         <td>Koperasi Sejahtera Makmur</td>
         <td>Kabupaten Pasaman Barat</td>
         <td>
-          <a href="/dashboard-admin"><img src="assets/images/pdf.png" alt="" width="30px">Lihat!</a>
+          <a href="/dashboard-admin"><img src="assets/images/info.png" alt="" width="30px">Lihat!</a>
       </td>
       </tr>
       <tr>
@@ -141,7 +141,7 @@
         <td>Koperasi Papa Mama</td>
         <td>Kota Solok</td>
         <td>
-          <a href="/dashboard-admin"><img src="assets/images/pdf.png" alt="" width="30px">Lihat!</a>
+          <a href="/dashboard-admin"><img src="assets/images/info.png" alt="" width="30px">Lihat!</a>
       </td>
       </tr>
       <tr>
@@ -149,7 +149,7 @@
         <td>Koperasi Friendzone</td>
         <td>Kota Payakumbuh</td>
         <td>
-          <a href="/dashboard-admin"><img src="assets/images/pdf.png" alt="" width="30px">Lihat!</a>
+          <a href="/dashboard-admin"><img src="assets/images/info.png" alt="" width="30px">Lihat!</a>
       </td>
       </tr>
       <tr>
@@ -157,7 +157,7 @@
         <td>Koperasi Menua Bersama</td>
         <td>Kabupaten Pesisir Selatan</td>
         <td>
-          <a href="/dashboard-admin"><img src="assets/images/pdf.png" alt="" width="30px">Lihat!</a>
+          <a href="/dashboard-admin"><img src="assets/images/info.png" alt="" width="30px">Lihat!</a>
       </td>
       </tr>
   </tbody>
