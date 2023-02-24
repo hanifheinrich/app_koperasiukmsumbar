@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 16, 2023 at 12:56 PM
+-- Generation Time: Feb 24, 2023 at 11:19 AM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -40,6 +40,34 @@ CREATE TABLE `failed_jobs` (
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `koperasis`
+--
+
+CREATE TABLE `koperasis` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `nama_koperasi` varchar(255) NOT NULL,
+  `arsip_pendirian` varchar(255) NOT NULL,
+  `arsip_pad_1` varchar(255) DEFAULT NULL,
+  `arsip_pad_2` varchar(255) DEFAULT NULL,
+  `arsip_pad_3` varchar(255) DEFAULT NULL,
+  `id_kotakab` bigint(20) UNSIGNED NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `koperasis`
+--
+
+INSERT INTO `koperasis` (`id`, `nama_koperasi`, `arsip_pendirian`, `arsip_pad_1`, `arsip_pad_2`, `arsip_pad_3`, `id_kotakab`) VALUES
+(25, 'Koperasi Pegawai Republik Indonesia Sekolah', 'papa-19-koperasi-pegawai-republik-indonesia-sekolah-pendirianpdf.pdf', 'papa-19-koperasi-pegawai-republik-indonesia-sekolah-padpdf.pdf', 'agam-124-koperasi-unit-desa-gadut-pad1pdf.pdf', '', 15),
+(26, 'KOPERASI JASA ANGKUTAN MELATI KOTAMADYA PADANG', 'pdg-1-koperasi-jasa-angkutan-melati-kotamadya-padang-pendirianpdf.pdf', 'pdg-1-koperasi-jasa-angkutan-melati-kotamadya-padang-padpdf.pdf', '', '', 14),
+(27, 'Koperasi Unit Desa Gadut', 'agam-124-koperasi-unit-desa-gadut-pendirianpdf.pdf', 'agam-124-koperasi-unit-desa-gadut-pad1pdf.pdf', 'agam-124-koperasi-unit-desa-gadut-pad2pdf.pdf', 'agam-124-koperasi-unit-desa-gadut-pad3pdf.pdf', 1),
+(28, 'Koperasi Unit Desa Sarainan', 'mtw-01-kud-sarainan-pendirianpdf.pdf', 'agam-124-koperasi-unit-desa-gadut-pad2pdf.pdf', NULL, '', 3),
+(29, 'Koperasi Karyawan PT PLN (Persero) Ranting Sicincin', 'padpar-29-koperasi-karyawan-pt-pln-persero-ranting-sicincin-pendirianpdf.pdf', '', '', '', 5),
+(30, 'KOPERASI PEGAWAI NEGERI KESEHATAN', 'pastim-1-koperasi-pegawai-negeri-kesehatan-kabupaten-pasaman-pendirianpdf.pdf', 'pastim-1-koperasi-pegawai-negeri-kesehatan-kabupaten-pasaman-padpdf.pdf', 'pastim-1-koperasi-pegawai-negeri-kesehatan-kabupaten-pasaman-pad-1pdf.pdf', '', 7);
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `migrations`
 --
 
@@ -54,11 +82,14 @@ CREATE TABLE `migrations` (
 --
 
 INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
-(1, '2014_10_12_000000_create_users_table', 1),
 (2, '2014_10_12_100000_create_password_resets_table', 1),
 (3, '2019_08_19_000000_create_failed_jobs_table', 1),
 (4, '2019_12_14_000001_create_personal_access_tokens_table', 1),
-(5, '2023_01_13_020547_create_roles_table', 2);
+(5, '2023_01_13_020547_create_roles_table', 1),
+(6, '2023_01_19_071218_create_wilayahs_table', 1),
+(7, '2023_01_27_020556_create_koperasis_table', 1),
+(8, '2023_02_01_075309_create_profiles_table', 2),
+(9, '2014_10_12_000000_create_users_table', 3);
 
 -- --------------------------------------------------------
 
@@ -94,81 +125,35 @@ CREATE TABLE `personal_access_tokens` (
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `profiles`
+--
+
+CREATE TABLE `profiles` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `alamat` varchar(255) NOT NULL,
+  `no_telepon` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `profiles`
+--
+
+INSERT INTO `profiles` (`id`, `email`, `alamat`, `no_telepon`) VALUES
+(1, 'diskop@sumbarprov.go.id', 'Jl. Khatib Sulaiman No. 11 Padang', '0751 - 7055292');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `roles`
 --
 
 CREATE TABLE `roles` (
-  `id` bigint(20) NOT NULL,
+  `id` bigint(20) UNSIGNED NOT NULL,
   `name` varchar(50) NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
---
--- Dumping data for table `roles`
---
-
-INSERT INTO `roles` (`id`, `name`, `created_at`, `updated_at`) VALUES
-(1, 'admin', NULL, NULL);
-
--- --------------------------------------------------------
-
---
--- Table structure for table `tabel_detail_wilayah`
---
-
-CREATE TABLE `tabel_detail_wilayah` (
-  `id_koperasi` varchar(100) NOT NULL,
-  `nama_koperasi` varchar(100) NOT NULL,
-  `arsip_pendirian` varchar(100) NOT NULL,
-  `arsip_pad` varchar(100) NOT NULL,
-  `ID` varchar(100) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `tabel_detail_wilayah`
---
-
-INSERT INTO `tabel_detail_wilayah` (`id_koperasi`, `nama_koperasi`, `arsip_pendirian`, `arsip_pad`, `ID`) VALUES
-('BKT001', 'Infinity Solidarity', 'ABABABA', 'ABABBABA', 'KT01'),
-('BKT002', 'qwert', 'asdf', 'zxcv', 'KT02');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `tabel_wilayah`
---
-
-CREATE TABLE `tabel_wilayah` (
-  `ID` varchar(100) NOT NULL,
-  `Jenis` varchar(100) NOT NULL,
-  `Nama` varchar(100) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `tabel_wilayah`
---
-
-INSERT INTO `tabel_wilayah` (`ID`, `Jenis`, `Nama`) VALUES
-('KB01', 'Kabupaten', 'Agam'),
-('KB02', 'Kabupaten', 'Dharmasraya'),
-('KB03', 'Kabupaten', 'Kepulauan Mentawai'),
-('KB04', 'Kabupaten', 'Lima Puluh Kota'),
-('KB05', 'Kabupaten', 'Padang Pariaman'),
-('KB06', 'Kabupaten', 'Pasaman'),
-('KB07', 'Kabupaten', 'Pasaman Barat'),
-('KB08', 'Kabupaten', 'Pesisir Selatan'),
-('KB09', 'Kabupaten ', 'Sijunjung'),
-('KB10', 'Kabupaten', 'Solok'),
-('KB11', 'Kabupaten', 'Solok Selatan'),
-('KB12', 'Kabupaten', 'Tanah Datar'),
-('KT01', 'Kota', 'Bukittinggi'),
-('KT02', 'Kota', 'Padang'),
-('KT03', 'Kota', 'Padang Panjang'),
-('KT04', 'Kota ', 'Pariaman'),
-('KT05', 'Kota ', 'Payakumbuh'),
-('KT06', 'Kota', 'Sawahlunto'),
-('KT07', 'Kota ', 'Solok');
 
 -- --------------------------------------------------------
 
@@ -180,9 +165,10 @@ CREATE TABLE `users` (
   `id` bigint(20) UNSIGNED NOT NULL,
   `name` varchar(255) NOT NULL,
   `email` varchar(255) NOT NULL,
-  `role_id` bigint(20) NOT NULL,
   `email_verified_at` timestamp NULL DEFAULT NULL,
   `password` varchar(255) NOT NULL,
+  `alamat` varchar(255) NOT NULL,
+  `no_telepon` varchar(255) NOT NULL,
   `remember_token` varchar(100) DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
@@ -192,8 +178,45 @@ CREATE TABLE `users` (
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`id`, `name`, `email`, `role_id`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'Admin', 'admin@gmail.com', 1, NULL, '$2y$10$fLT2rLbJjDywHjQDFdfXKu85SjLEuBBy9Ejs8WRxSTt5NQE7E4rZa', NULL, NULL, NULL);
+INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `alamat`, `no_telepon`, `remember_token`, `created_at`, `updated_at`) VALUES
+(1, 'Admin Diskop', 'diskop@sumbarprov.go.id', NULL, '$2y$10$Th0/XRh4.ESljQ/w7.6uROvein7kAaOOH2ITO8Af8xvupmk9oY/Q2', 'Jl. Khatib Sulaiman No. 11 Padang', '0751 - 7055292', NULL, NULL, '2023-02-08 18:12:28');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `wilayahs`
+--
+
+CREATE TABLE `wilayahs` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `nama` varchar(255) NOT NULL,
+  `gambar` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `wilayahs`
+--
+
+INSERT INTO `wilayahs` (`id`, `nama`, `gambar`) VALUES
+(1, 'Kabupaten Agam', '230128074616.png'),
+(2, 'Kabupaten Dharmasraya', '230130071216.png'),
+(3, 'Kabupaten Kepulauan Mentawai', '230130071234.jpg'),
+(4, 'Kabupaten Lima Puluh Kota', '230130071247.png'),
+(5, 'Kabupaten Padang Pariaman', '230130071310.gif'),
+(6, 'Kabupaten Pasaman Barat', '230130071337.png'),
+(7, 'Kabupaten Pasaman', '230130071403.png'),
+(8, 'Kabupaten Pesisir Selatan', '230130071507.png'),
+(9, 'Kabupaten Sijunjung', '230130071525.png'),
+(10, 'Kabupaten Solok', '230130071543.png'),
+(11, 'Kabupaten Solok Selatan', '230130071558.png'),
+(12, 'Kabupaten Tanah Datar', '230130071620.png'),
+(13, 'Kota Bukittinggi', '230130071641.png'),
+(14, 'Kota Padang', '230130071653.png'),
+(15, 'Kota Padang Panjang', '230130071718.png'),
+(16, 'Kota Pariaman', '230130071734.png'),
+(17, 'Kota Payakumbuh', '230130071750.png'),
+(18, 'Kota Sawahlunto', '230130071804.png'),
+(19, 'Kota Solok', '230130071820.gif');
 
 --
 -- Indexes for dumped tables
@@ -205,6 +228,13 @@ INSERT INTO `users` (`id`, `name`, `email`, `role_id`, `email_verified_at`, `pas
 ALTER TABLE `failed_jobs`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `failed_jobs_uuid_unique` (`uuid`);
+
+--
+-- Indexes for table `koperasis`
+--
+ALTER TABLE `koperasis`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `id_kotakab` (`id_kotakab`);
 
 --
 -- Indexes for table `migrations`
@@ -227,31 +257,29 @@ ALTER TABLE `personal_access_tokens`
   ADD KEY `personal_access_tokens_tokenable_type_tokenable_id_index` (`tokenable_type`,`tokenable_id`);
 
 --
+-- Indexes for table `profiles`
+--
+ALTER TABLE `profiles`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `roles`
 --
 ALTER TABLE `roles`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `tabel_detail_wilayah`
---
-ALTER TABLE `tabel_detail_wilayah`
-  ADD PRIMARY KEY (`id_koperasi`),
-  ADD KEY `tabel_detail_wilayah` (`ID`);
-
---
--- Indexes for table `tabel_wilayah`
---
-ALTER TABLE `tabel_wilayah`
-  ADD PRIMARY KEY (`ID`);
-
---
 -- Indexes for table `users`
 --
 ALTER TABLE `users`
   ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `users_email_unique` (`email`),
-  ADD KEY `fk_role` (`role_id`);
+  ADD UNIQUE KEY `users_email_unique` (`email`);
+
+--
+-- Indexes for table `wilayahs`
+--
+ALTER TABLE `wilayahs`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -264,15 +292,33 @@ ALTER TABLE `failed_jobs`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
+-- AUTO_INCREMENT for table `koperasis`
+--
+ALTER TABLE `koperasis`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
+
+--
 -- AUTO_INCREMENT for table `migrations`
 --
 ALTER TABLE `migrations`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `personal_access_tokens`
 --
 ALTER TABLE `personal_access_tokens`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `profiles`
+--
+ALTER TABLE `profiles`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `roles`
+--
+ALTER TABLE `roles`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
@@ -282,20 +328,20 @@ ALTER TABLE `users`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
+-- AUTO_INCREMENT for table `wilayahs`
+--
+ALTER TABLE `wilayahs`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
+
+--
 -- Constraints for dumped tables
 --
 
 --
--- Constraints for table `tabel_detail_wilayah`
+-- Constraints for table `koperasis`
 --
-ALTER TABLE `tabel_detail_wilayah`
-  ADD CONSTRAINT `tabel_detail_wilayah` FOREIGN KEY (`ID`) REFERENCES `tabel_wilayah` (`ID`);
-
---
--- Constraints for table `users`
---
-ALTER TABLE `users`
-  ADD CONSTRAINT `fk_role` FOREIGN KEY (`role_id`) REFERENCES `roles` (`id`);
+ALTER TABLE `koperasis`
+  ADD CONSTRAINT `koperasis_ibfk_1` FOREIGN KEY (`id_kotakab`) REFERENCES `wilayahs` (`id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
